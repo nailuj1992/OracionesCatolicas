@@ -1,0 +1,595 @@
+<resources>
+    <string name="app_name">Catholic Prayers</string>
+    <string name="app_description">Prayers to talk with God.</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_special_prayers">Special Prayers</string>
+    <string name="title_simple_prayers">Simple Prayers</string>
+
+    <string name="title_settings_short">Prefs</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="preferences_category_general">General</string>
+    <string name="preferences_language">Language</string>
+    <!-- NOTE: Has to correspond to array "locales" in locales.xml (elements in same orderwith) -->
+    <string-array name="settings_language_values">
+        <item>Default (System setting)</item>
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+
+    <string name="title_rosary">Holy Rosary</string>
+    <string name="title_ninth">Christmas Novena</string>
+
+    <string name="title_our_father">Our Father</string>
+    <string name="title_hail_mary">Hail Mary</string>
+    <string name="title_glory_be">Glory Be</string>
+    <string name="title_fatima">Fatima Prayer</string>
+    <string name="title_hail_holy_queen">Hail Holy Queen</string>
+    <string name="title_st_michael_short">Prayer to St. Michael</string>
+    <string name="title_st_michael_long">Prayer to Archangel St. Michael</string>
+    <string name="title_magnificat">Magnificat</string>
+    <string name="title_apostles_creed">Apostles\' Creed</string>
+
+    <string name="txt_amen">Amen</string>
+    <string name="txt_pray">Pray</string>
+    <string name="txt_prev">Back</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_end">End</string>
+    <string name="txt_begin">Begin</string>
+    <string name="txt_save">Save</string>
+
+    <string name="txt_progress">%s of %s</string>
+
+    <string name="txt_num">#</string>
+    <string name="txt_blank"> </string>
+    <string name="txt_close">X</string>
+
+    <string name="title_welcome">¡WELCOME!</string>
+    <string name="txt_welcome">
+        Here we bring a little compilation with the most important catholic prayers,
+        so you can keep a much closer and effective communication with the Lord.
+    </string>
+
+    <string name="txt_close_dialog">Are you sure you want to go Home?</string>
+    <string name="txt_yes_choice">Yes</string>
+    <string name="txt_no_choice">No</string>
+
+    <string name="txt_our_father_1">
+        Our Father, who art in heaven,\nHallowed be Thy Name.\nThy Kingdom come.\nThy Will be done, on Earth\nas it is in Heaven.
+    </string>
+    <string name="txt_our_father_2">
+        Give us this day our daily bread.\nForgive us our trespasses,\nas we forgive those\nwho trespass against us.\nLead us not into temptation,\nbut deliver us from evil.
+    </string>
+
+    <string name="txt_hail_mary_1">
+        Hail Mary, full of grace.\nThe Lord is with you;\nblessed are you among women,\nand blessed is the fruit of your womb, Jesus.
+    </string>
+    <string name="txt_hail_mary_2">
+        Holy Mary, Mother of God\nand our Mother,\npray for us sinners,\nnow and at the hour of our death.
+    </string>
+
+    <string name="txt_glory_be_1">
+        Glory be to the Father,\nand to the Son,\nand to the Holy Spirit.
+    </string>
+    <string name="txt_glory_be_2">
+        As it was in the beginning,\nis now and always,\nand unto the ages of ages.
+    </string>
+
+    <string name="txt_hail_holy_queen_1">
+        Hail Holy Queen, Mother of Mercy, our Life,\nour Sweetness, and our hope.\nTo thee we cry, poor banished children of Eve.\nTo thee we send up our sighs, mourning and\nweeping in this vale of tears.\nTurn then most gracious Advocate.\nThine eyes of mercy toward us,\nand after this, our exile, show unto us,\nthe blessed fruit of thy womb, Jesus.\nOh clement! Oh loving! Oh sweet Virgin Mary!
+    </string>
+    <string name="txt_hail_holy_queen_2">
+        Pray for us Oh Holy Mother of God,\nThat we may be made worthy\nof the promises of Christ.
+    </string>
+
+    <string name="txt_st_michael_1">
+        Saint Michael the Archangel, defend us in battle.\nBe our protection against the wickedness and snares of the devil.\nMay God rebuke him, we humbly pray.
+    </string>
+    <string name="txt_st_michael_2">
+        And do thou, Oh Prince of the Celestial Host, by the power of God,\nthrust into hell Satan and all evil spirits\nwho wander through the world for the ruin of souls.
+    </string>
+
+    <string name="txt_magnificat_quote">(Lk 1, 46–55)</string>
+    <string name="txt_magnificat_horiz">Magnificat (Lk 1, 46–55)</string>
+    <string name="txt_magnificat_1">
+        My soul proclaims the greatness of the Lord;\nmy spirit rejoices in God my Savior.\nFor He has looked with favor on His humble servant, and from this day all generations will call me blessed;\nthe Almighty has done great things for me.\n Holy is His Name!
+    </string>
+    <string name="txt_magnificat_2">
+        He has mercy on those who fear Him in every generation.\nHe has shown the strength of his arm:\nHe has scattered the proud in their conceit.\nHe has cast down the mighty from their thrones, and has lifted up the humble.\nHe has filled the hungry with good things, and the rich He has sent away empty.
+    </string>
+    <string name="txt_magnificat_3">
+        He has come to the help of His servant Israel for He has remembered his promise of mercy,\nthe promise He made to our fathers, to Abraham and his children for ever.
+    </string>
+
+    <string name="txt_apostles_creed_1">
+        I believe in God, the Father almighty creator of Heaven and Earth.\nI believe in Jesus Christ, His only Son, our Lord, who was conceived\nby the Holy Spirit; born of the Virgin Mary; suffered under Pontius\nPilate; was crucified, died, and was buried. He descended into hell.\nOn the third day he rose again from the dead. He ascended into Heaven\nand is seated at the right hand of God, the Father Almighty. He will\ncome again in glory to judge the living and the dead.
+    </string>
+    <string name="txt_apostles_creed_2">
+        I believe in the Holy Spirit, the Holy Catholic Church, the communion\nof saints, the forgiveness of sins, the resurrection of the body,\nand the life everlasting.
+    </string>
+
+    <string name="txt_fatima_1">
+        Oh my Jesus, forgive us of our sins.\nSave us from the fires of hell and lead all souls into heaven,\nespecially those in most need of thy infinite Mercy.
+    </string>
+    <string name="txt_fatima_2">
+        Mary, spiritual key of our faith,\npray for us who took refuge in you.
+    </string>
+    <string name="txt_fatima_3">
+        Mary, mother of grace, mother of mercy,\ndefend us from the enemy and protect us,\nnow and at the hour of our death.
+    </string>
+
+    <string name="title_sign_cross">The Sign of the Cross</string>
+    <string name="txt_sign_cross_1">By the sign of the cross, deliver us from our enemies, You who are our God.</string>
+    <string name="txt_sign_cross_2">In the name of the Father, and of the Son, and of the Holy Spirit.</string>
+
+    <string name="title_rosary_offering">Rosary Offering</string>
+    <string name="txt_rosary_offering">(Here are the offers, requests or reasons why this Rosary is being done)</string>
+
+    <string name="title_rosary_joyful">Joyful Mysteries</string>
+    <string name="title_rosary_joyful_with_days">Joyful Mysteries (Monday and Saturday)</string>
+    <string name="title_rosary_joyful_only_days">(Monday and Saturday)</string>
+    <string name="txt_rosary_joyful_1">The Annunciation of the Angel and the incarnation of the Word</string>
+    <string name="txt_rosary_joyful_2">Mary\'s visitation to her cousin Saint Elizabeth</string>
+    <string name="txt_rosary_joyful_3">The birth of the baby Jesus in Bethlehem</string>
+    <string name="txt_rosary_joyful_4">The Presentation of the Child Jesus in the Temple and the Purification of Mary</string>
+    <string name="txt_rosary_joyful_5">Loss and finding of the child Jesus in the temple</string>
+
+    <string name="title_rosary_sorrowful">Sorrowful Mysteries</string>
+    <string name="title_rosary_sorrowful_with_days">Sorrowful Mysteries (Tuesday and Friday)</string>
+    <string name="title_rosary_sorrowful_only_days">(Tuesday and Friday)</string>
+    <string name="txt_rosary_sorrowful_1">The agony of Jesus in the Garden of Olives</string>
+    <string name="txt_rosary_sorrowful_2">The bloody scourging of Jesus</string>
+    <string name="txt_rosary_sorrowful_3">Jesus\' crowning with thorns</string>
+    <string name="txt_rosary_sorrowful_4">Jesus with the cross on his shoulders, on the way to Calvary</string>
+    <string name="txt_rosary_sorrowful_5">The crucifixion and death of Jesus</string>
+
+    <string name="title_rosary_glorious">Glorious Mysteries</string>
+    <string name="title_rosary_glorious_with_days">Glorious Mysteries (Wednesday and Sunday)</string>
+    <string name="title_rosary_glorious_only_days">(Wednesday and Sunday)</string>
+    <string name="txt_rosary_glorious_1">The resurrection of Jesus</string>
+    <string name="txt_rosary_glorious_2">The Lord\'s Ascension into Heaven</string>
+    <string name="txt_rosary_glorious_3">The coming of the Holy Spirit on Our Lady and the apostles</string>
+    <string name="txt_rosary_glorious_4">Assumption of Mary into Heaven</string>
+    <string name="txt_rosary_glorious_5">The coronation of Our Lady as Universal Queen of all creation</string>
+
+    <string name="title_rosary_luminous">Luminous Mysteries</string>
+    <string name="title_rosary_luminous_with_days">Luminous Mysteries (Thursday)</string>
+    <string name="title_rosary_luminous_only_days">(Thursday)</string>
+    <string name="txt_rosary_luminous_1">Jesus\' baptism in the Jordan River</string>
+    <string name="txt_rosary_luminous_2">The realization of Jesus\' first miracle, turning water into wine at the wedding at Cana</string>
+    <string name="txt_rosary_luminous_3">Jesus\' preaching, announcing the Kingdom of God and inviting conversion</string>
+    <string name="txt_rosary_luminous_4">The Transfiguration of Jesus on Mount Tabor</string>
+    <string name="txt_rosary_luminous_5">The institution of the Eucharist at the Last Supper</string>
+
+    <string name="txt_rosary_choose_mystery">Choose a mystery to begin</string>
+    <string name="txt_rosary_auto_mystery">Or don\'t select any of them and let us selecting the mystery for you</string>
+    <string name="txt_rosary_reflection">Short reflection</string>
+    <string name="txt_rosary_pause">(Pause for meditation)</string>
+
+    <string name="txt_rosary_joyful_1_paragrafh_1">
+        The firstborn of all creatures, the synthesis of the order of the universe, the Mother of Wisdom, was not able to imagine how it would be possible to carry on the Incarnation of the Word in Her. \"… Nothing is impossible for God\" the angel said. On a side, the most perfect humility of a Virgin, and on the other, the absolute power of God. Omnipotence allows itself to be drawn by humility.
+    </string>
+    <string name="txt_rosary_joyful_1_paragrafh_2">
+        For this Mystery, let us ask for the intercession of the Blessed Virgin so that the same gift of humility that she possesses, and a complete confidence in divine omnipotence, may be infused in our soul.
+    </string>
+
+    <string name="txt_rosary_joyful_2_paragrafh_1">
+        When the voice of the Mother of the Incarnated Word resounded there, all Baptist\'s family was filled with graces and celestial blessings, in a first manifestation of the inexhaustible wealth of benefits and mercies that Jesus brought to the world.
+    </string>
+    <string name="txt_rosary_joyful_2_paragrafh_2">
+        For this Mystery, let us ask for the intercession of the Blessed Virgin to obtain the grace of always being attentive to the voice of Mary within us, and of an ardent charity towards our neighbor.
+    </string>
+
+    <string name="txt_rosary_joyful_3_paragrafh_1">
+        Heaven and earth celebrate the birth of the Savior. And in the grotto of Bethlehem, the Blessed Virgin reverently took the Child Jesus and hugged him to her chest. Imagine the feelings of devotion, tenderness and love that Mary experienced when she saw the Lord of the world in her arms, the Son of the Eternal Father who had deigned to also become Her Son, choosing her as Mother among all women.
+    </string>
+    <string name="txt_rosary_joyful_3_paragrafh_2">
+        For this Mystery and through the intercession of the Blessed Virgin we ask for the grace to always keep all \"the words\" that are spoken to us by the Holy Spirit within us, and to meditate on them in our hearts.
+    </string>
+
+    <string name="txt_rosary_joyful_4_paragrafh_1">
+        In front of the Supreme Good, there can be no neutral position: either adherence or rejection. If we follow the ways of the Gospel, the same that happened to Jesus will happen to us.
+    </string>
+    <string name="txt_rosary_joyful_4_paragrafh_2">
+        For this Mystery and the intercession of the Blessed Virgin, let us ask for the grace to fulfill the Law with perfection, accepting with love and resignation the contradictions that we may cause in others, by our gifts or virtues.
+    </string>
+    <string name="txt_rosary_joyful_4_paragrafh_3">
+        Thanks to the Mystery of the Presentation, descend into our souls. Amen.
+    </string>
+
+    <string name="txt_rosary_joyful_5_paragrafh_1">
+        As soon as they realized his disappearance, Mary and Joseph immediately went looking for Jesus. An excellent example for us: if by fault or not we lose Jesus, let us seek him immediately.
+    </string>
+    <string name="txt_rosary_joyful_5_paragrafh_2">
+        For this Mystery and the intercession of the Blessed Virgin, let us ask for the grace of never losing Jesus; But if this happens, let us ask for the grace to seek it with the same diligence that She and Saint Joseph had.
+    </string>
+
+    <string name="txt_rosary_sorrowful_1_paragrafh_1">
+        Jesus\' prayers to the Father constitute one of the most beautiful scenes of the Gospel. In all creation, where can we find a relationship with God as rich as that? Jesus is for us the divine example and counselor. Let us learn from Him how to pray for not to fall into temptation.
+    </string>
+    <string name="txt_rosary_sorrowful_1_paragrafh_2">
+        For this Mystery, let us ask for the intercession of the Blessed Virgin to obtain the grace to fully benefit from the Jesus\' prayers, specially this one, made in the Garden of Olives, and so let us be contemplative with Him.
+    </string>
+
+    <string name="txt_rosary_sorrowful_2_paragrafh_1">
+        In this Mystery, Pilate orders Jesus to be scourged because of fear of Jewish authorities. This is the frequent attitude of all those who seek a neutral position between good and evil: in critical situations they prefer in a certain way to sacrifice something of good, in search of a weakening of evil. Since Pilate didn\'t find any crime in Jesus, he ordered him to be scourged.
+    </string>
+    <string name="txt_rosary_sorrowful_2_paragrafh_2">
+        For this Mystery, let us ask for the intercession of the Blessed Virgin to obtain the grace of always attending with enthusiasm and perfection the calls of God, for never following the Pilate\'s example, commanding Jesus to be scourged.
+    </string>
+
+    <string name="txt_rosary_sorrowful_3_paragrafh_1">
+        For this Mystery, let us ask for the intercession of the Blessed Virgin to obtain the grace to bear humiliation and resignation with humility and resignation, even if they are unfair, always maintaining a high sense of our dignity, just like Jesus did.
+    </string>
+
+    <string name="txt_rosary_sorrowful_4_paragrafh_1">
+        Immediately after being doomed by Pilate, Our Lord Jesus Christ took the cross on his shoulders, carrying it to Calvary and dying crucified on it. He carried it with unexplainable love, because he desired to leave the banner high, under which his followers should be ready on this land. Under his weight, Jesus achieved our salvation; and by his example, he gave us strength to embrace the trials of this life. It is through the cross that we will share the Kingdom of Heaven later with him.
+    </string>
+    <string name="txt_rosary_sorrowful_4_paragrafh_2">
+        For this Mystery and for the intercession of the Blessed Virgin let us ask for the grace of patience, courage and strength necessary to carry all our crosses.
+    </string>
+
+    <string name="txt_rosary_sorrowful_5_paragrafh_1">
+        Here is the greatness and mystery of a God who becomes man and allows himself to be killed on the cross to redeem mankind. A single gesture of his would be enough to accomplish this redemption; However, he preferred to deliver every last drop of his precious blood.
+    </string>
+    <string name="txt_rosary_sorrowful_5_paragrafh_2">
+        And what must we do to repay such divine goodness? Yes, \"love is paid for with love\"; only then with an unlimited and exclusive love in relation to Jesus and his Blessed Mother we will be fair with our Savior.
+    </string>
+    <string name="txt_rosary_sorrowful_5_paragrafh_3">
+        Through this Mystery and the intercession of the Blessed Virgin, let us ask for the grace of the conversion of sinners, the perseverance of the righteous and the relief of souls in purgatory.
+    </string>
+
+    <string name="txt_rosary_glorious_1_paragrafh_1">
+        Our Lord triumphed over death and sin. Redempted mankind and the gates of heaven opened again for us, the most sacred soul of Jesus meets his adorable Body in the tomb, where he goes out for appear to his Holy Mother, to the holy women and to his apostles and disciples.
+    </string>
+    <string name="txt_rosary_glorious_1_paragrafh_2">
+        For this Mystery and through the intercession of the Blessed Virgin, let us ask for the grace to always keep in mind in our memory the scene of Resurrection and the final judgment, in which everyone will be able to know the whole of the works of men.
+    </string>
+
+    <string name="txt_rosary_glorious_2_paragrafh_1">
+        After promising the Apostles the coming of the Holy Spirit, Our Lord rose by his own power to the empyrean heaven, where he was received with divine pomps by the Eternal Father and the entire celestial court. He was given the seat to the right of the Almighty, from where he will return in all his glory and majesty to judge the living and the dead.
+    </string>
+    <string name="txt_rosary_glorious_2_paragrafh_2">
+        For this Mystery and through the intercession of the Blessed Virgin, let us ask for the grace of constantly have a burning desire to go to heaven, with our bodies glorified.
+    </string>
+
+    <string name="txt_rosary_glorious_3_paragrafh_1">
+        The intense living of the disciples with their Master had not been enough to transform them, not even to strengthen them. With the coming of the Holy Spirit, the Church which was born from the Paschal ministry of Christ, acquired vigor and expanded in a miraculous way.
+    </string>
+    <string name="txt_rosary_glorious_3_paragrafh_2">
+        For this Mystery, let us ask the Blessed Virgin to intercede for us together with her Divine Husband, to obtain for us the fullness of the gifts that transformed the Jesus\' disciples and so we can fulfill our mission with perfection.
+    </string>
+
+    <string name="txt_rosary_glorious_4_paragrafh_1">
+        Having fulfilled Her mission on this land, and burning with desire to join to Her adorable Son in eternity, the Most Holy Mary fell asleep gently in the Lord. It wasn\'t death dressed in mourning and sadness, but divine love adorned with light and joy that came to break the thread of such a noble life. And without her virginal body suffering of any corruption, she also rose and was gloriously taken to heaven, from where Jesus came to receive her with the blessed company of angels and saints.
+    </string>
+    <string name="txt_rosary_glorious_4_paragrafh_2">
+        Mary enters the celestial mansion, all beautiful and resplendent as the blessed among all women, and full of grace, the God\'s favorite, the Immaculate, the most beautiful of all creatures.
+    </string>
+    <string name="txt_rosary_glorious_4_paragrafh_3">
+        For this Mystery let us ask the Blessed Virgin for an ardent and tender devotion to Her, our dear and so good Mother.
+    </string>
+
+    <string name="txt_rosary_glorious_5_paragrafh_1">
+        Our Lady is glorified by the Holy Trinity, in the midst of the joy of all the entire celestial court. The Eternal Father crowned her, communicating the omnipotence of the supplication; the Son, wisdom; and the Holy Spirit love.
+    </string>
+    <string name="txt_rosary_glorious_5_paragrafh_2">
+        Awarded with this triple crown, Our Lady, Sovereign and compassionate Mother, begins to spread over us, her children and vassals, the inexhaustible abundance of her mercies.
+    </string>
+    <string name="txt_rosary_glorious_5_paragrafh_3">
+        For this Mystery and the intercession of the Blessed Virgin, let us ask for perseverance in grace and the crown of glory.
+    </string>
+
+    <string name="txt_rosary_luminous_1_paragrafh_1">
+        Before beginning his public life, Jesus, the Incarnated Innocence, had himself baptized, assuming about himself our weaknesses, evils and miseries. In this way all holiness works should begin: with purification.
+    </string>
+    <string name="txt_rosary_luminous_1_paragrafh_2">
+        For this Mystery and the intercession of the Blessed Virgin, we ask for the grace that through the baptism of her Divine Son, she will obtain for us a clean heart and a new spirit, to carry out with perfection our apostolate together with our neighbor.
+    </string>
+
+    <string name="txt_rosary_luminous_2_paragrafh_1">
+        Actually, the time hadn\'t come yet. However, a simple suggestion from His Mother leads Jesus to anticipate his might miracles.
+    </string>
+    <string name="txt_rosary_luminous_2_paragrafh_2">
+        Providence allowed this to happen, to teach us the wonderful power of intercession of the Most Holy Mary with her Divine Son.
+    </string>
+    <string name="txt_rosary_luminous_2_paragrafh_3">
+        For this Mystery and the intercession of the Blessed Virgin, let us ask for the grace to have an unwavering, pure and growing confidence in the omnipotence of her supplication.
+    </string>
+
+    <string name="txt_rosary_luminous_3_paragrafh_1">
+        Jesus anxiously awaited the moment to begin his exhaustive public life, in order to announce the Good News to us. And for this the Baptist\'s inprisonment should be taken as a signal.
+    </string>
+    <string name="txt_rosary_luminous_3_paragrafh_2">
+        With what joy and excitement He began to tell everybody that the days were completed, and to announce the closenees of God\'s Kingdom!
+    </string>
+    <string name="txt_rosary_luminous_3_paragrafh_3">
+        Jesus himself will make clear us the conditions for entering that Kingdom:\nbecoming innocent as children (Mt. 19, 15),\ndetaching from all creatures and following him (just as he advised the rich young man - Mt. 19, 10-21),\novercoming self-love by carrying our own cross (Mt. 10, 38),\nhearing the God\'s word and putting it into practice (Mt. 13, 18-23),\ngiving preference to celestial things over material things (Mt. 13, 44-46);\nIn short, the Divine Master wants our true conversion.
+    </string>
+    <string name="txt_rosary_luminous_3_paragrafh_4">
+        For this reason, let us ask for in this Mystery, through the intercession of the Blessed Virgin, to obtain for us from Her Divine Son the forgiveness of all our sins, the extirpation of defects, whims and attachments, in addition to a total conversion. May She transform us in such a way that our hearts become similar to Hers, so with perfection, we may work for salvation of everybody and the expansion of Christ\'s Kingdom.
+    </string>
+
+    <string name="txt_rosary_luminous_4_paragrafh_1">
+        When He transfigured before the three Apostles, Jesus strengthened our hope for eternal life, encouraging us to endure in a better way the sufferings and trials of our life. When we know the glory that awaits us, we have more patience in the midst of tribulations. With this glare it will be our resurrection on the Doomsday!
+    </string>
+    <string name="txt_rosary_luminous_4_paragrafh_2">
+        For this Mystery, let us ask for the intercession of the Blessed Virgin to obtain the grace of never losing the conviction of the glory that is reserved for those who persevere, so we will never be discouraged throughout our existence.
+    </string>
+
+    <string name="txt_rosary_luminous_5_paragrafh_1">
+        What else could Jesus have given us? Food and drink were made so we can eternally participate in his own life. He descended from heaven, assuming the substance of bread and wine to raise us to God. By taking communion, we resemble Mary for a few moments, possessing the Body, Blood, Soul and Divinity of Jesus within us.
+    </string>
+    <string name="txt_rosary_luminous_5_paragrafh_2">
+        For this Mystery, let us ask Our Lady of the Blessed Sacrament for the grace to grow ardently in Eucharistic devotion, and to never miss the chance of communing, with all our faith, hope and love.
+    </string>
+
+    <string name="txt_rosary_current_mystery">In the %s we contemplate…</string>
+    <string name="title_rosary_last_part">Now we contemplate…</string>
+    <string name="txt_rosary_last_part">Last part of Rosary</string>
+    <string name="txt_rosary_last_part_1">Let us honor Mary, beloved Daughter of the Eternal Father.</string>
+    <string name="txt_rosary_last_part_2">Let us honor Mary, admirable Mother of God the Son.</string>
+    <string name="txt_rosary_last_part_3">Let us honor Mary, the faithful wife of the Holy Spirit.</string>
+
+    <string name="txt_first">First</string>
+    <string name="txt_second">Second</string>
+    <string name="txt_third">Third</string>
+    <string name="txt_fourth">Fourth</string>
+    <string name="txt_fifth">Fifth</string>
+
+    <string name="txt_rosary_joyful_mystery_single">Joyful Mystery</string>
+    <string name="txt_rosary_sorrowful_mystery_single">Sorrowful Mystery</string>
+    <string name="txt_rosary_glorious_mystery_single">Glorious Mystery</string>
+    <string name="txt_rosary_luminous_mystery_single">Luminous Mystery</string>
+
+    <string name="title_ninth_day_1">Day 1</string>
+    <string name="title_ninth_day_1_with_days">Day 1 (December 16th)</string>
+    <string name="title_ninth_day_1_only_days">(December 16th)</string>
+
+    <string name="title_ninth_day_2">Day 2</string>
+    <string name="title_ninth_day_2_with_days">Day 2 (December 17th)</string>
+    <string name="title_ninth_day_2_only_days">(December 17th)</string>
+
+    <string name="title_ninth_day_3">Day 3</string>
+    <string name="title_ninth_day_3_with_days">Day 3 (December 18th)</string>
+    <string name="title_ninth_day_3_only_days">(December 18th)</string>
+
+    <string name="title_ninth_day_4">Day 4</string>
+    <string name="title_ninth_day_4_with_days">Day 4 (December 19th)</string>
+    <string name="title_ninth_day_4_only_days">(December 19th)</string>
+
+    <string name="title_ninth_day_5">Day 5</string>
+    <string name="title_ninth_day_5_with_days">Day 5 (December 20th)</string>
+    <string name="title_ninth_day_5_only_days">(December 20th)</string>
+
+    <string name="title_ninth_day_6">Day 6</string>
+    <string name="title_ninth_day_6_with_days">Day 6 (December 21st)</string>
+    <string name="title_ninth_day_6_only_days">(December 21st)</string>
+
+    <string name="title_ninth_day_7">Day 7</string>
+    <string name="title_ninth_day_7_with_days">Day 7 (December 22nd)</string>
+    <string name="title_ninth_day_7_only_days">(December 22nd)</string>
+
+    <string name="title_ninth_day_8">Day 8</string>
+    <string name="title_ninth_day_8_with_days">Day 8 (December 23rd)</string>
+    <string name="title_ninth_day_8_only_days">(December 23rd)</string>
+
+    <string name="title_ninth_day_9">Day 9</string>
+    <string name="title_ninth_day_9_with_days">Day 9 (December 24th)</string>
+    <string name="title_ninth_day_9_only_days">(December 24th)</string>
+
+    <string name="txt_ninth_choose_day">Choose a day to begin</string>
+    <string name="txt_ninth_auto_day">Or don\'t select any of them and let us selecting the day for you</string>
+    <string name="txt_ninth_auto_day_alert">(Only applies for the corresponding days)</string>
+    <string name="txt_ninth_today_not_suitable">We aren\'t at Christmas time. Select a day to continue.</string>
+
+    <string name="title_ninth_offering">Novena\'s Offering</string>
+    <string name="txt_ninth_offering">(Here are the offers, requests or reasons why this Novena is being done)</string>
+
+    <string name="title_consideration">Consideration - %s</string>
+    <string name="title_paragraph">Day - %s</string>
+
+    <string name="title_ninth_initial_prayer">Initial Prayer</string>
+    <string name="txt_ninth_initial_prayer_1">
+        Most gracious God of infinite charity, that have loved all mankind, you gave us in your child the best pledge of your love, that once made Him a man in the womb of a Virgin and born in a manger for our health and cure; I, on behalf of all mortals, give you infinite thanks for so sovereign benefit.
+    </string>
+    <string name="txt_ninth_initial_prayer_2">
+        In exchange of Him, I will offer the poverty, humility and other virtues of your incarnated Son, I beseech you for His divine merits, for the discomforts of His birth and the tender tears He shed in the manger, also prepare our hearts with deep humility, passion, and with such contempt of all earthly things, so that the newborn Jesus has in them his crib and dwell forever.
+    </string>
+
+    <string name="title_ninth_virgin_mary_prayer">Prayer to the Blessed Virgin</string>
+    <string name="txt_ninth_virgin_mary_prayer_1">
+        Sovereign Mary, that for your great virtues and especially for your humility, you have deserved that all a god had chosen you to be His Mother, I beg that you yourself prepare and arrange my and everyone\'s soul at this time of praying this advent pray (Novena), for the spiritual birth of your beloved Son.
+    </string>
+    <string name="txt_ninth_virgin_mary_prayer_2">
+        Oh sweet mother!, Convey to me something of the deep meditation and divine tenderness of your awaiting, so that we should do less unworthy of him, love him and adore him for all eternity.
+    </string>
+
+    <string name="title_ninth_saint_joseph_prayer">Prayer to Saint Joseph</string>
+    <string name="txt_ninth_saint_joseph_prayer_1">
+        Oh Blessed Joseph, husband of Mary and foster father of Jesus! Infinite thanks be to God that has chosen you for as sovereign mysteries and adorned you with all the gifts provided to so excellent greatness.
+    </string>
+    <string name="txt_ninth_saint_joseph_prayer_2">
+        I beseech you for the love you had to the Divine Child, hold me in earnest wishes to see him and receive him sacramentally, while I see His divine essence and joy in heaven.
+    </string>
+
+    <string name="title_ninth_child_jesus_prayer">Prayer to the Child Jesus</string>
+    <string name="txt_ninth_child_jesus_prayer_1">
+        Remember, Oh most sweet Child, Jesus!, you said to the Venerable Margaret of the Blessed Sacrament, and through her to all your devotees, these words so comforting for our poor, burdened and suffering humanity: \"Anything you want to ask, ask for it by the merits of my childhood and nothing will be denied.\"
+    </string>
+    <string name="txt_ninth_child_jesus_prayer_pause">
+        (Brief pause of silence for personal requests)
+    </string>
+    <string name="txt_ninth_child_jesus_prayer_2">
+        Full of confidence in you, oh Jesus!, that you are the same truth, we come to lay before all our misery. Help us to lead a holy life, to get a blessed eternity. Grant us by the infinite merits of your childhood, the grace of which we need both. We surrender to you, oh omnipotent Boy!, We are confident that you will not missed our hope, and that under your divine promise, you will welcome and favourably dispatch our prayer.
+    </string>
+
+    <string name="txt_ninth_1_consideration_1">
+        In the beginning of time the Word was resting in the bosom of his Father at the top of heaven, in there He was the cause, along with the model of the creation. In those depths of an untold eternity remained the Child of Bethlehem; before He deigned to descend to Earth and visibly taken possession of the grotto of Bethlehem. Here is where we have to look for His beginnings that have never beginning, hence we date the genealogy of eternity, which has no ancestors and contemplate the life of infinite satisfaction there He had.
+    </string>
+    <string name="txt_ninth_1_consideration_2">
+        The life of the eternal Word in the bosom of his Father was a wonderful life and yet sublime mystery!, Find another home, another ready-made mansion. It was not because in his eternal mansion there was missing something to his infinite happiness, but because his infinite mercy longed for redemption and salvation of mankind, that without Him we could not verified it. Adam\'s sin had offended God and that infinite offence could not be condoned but by the merits of the same God. The race of Adam had disobeyed and deserved eternal punishment, it was therefore necessary to save it and meet its fault, that God, without leaving heaven, take the form of man on Earth and obeys the will of his Father atone that disobedience, ingratitude and rebellion. It was necessary, in view of his love, that He taken the form, systematic weaknesses and ignorance of man, it grew to provide spiritual growth to suffer, to die to teach their passions and their pride. And so the eternal Word, burning to save man, and also decided to become man and redeem the guilty.
+    </string>
+
+    <string name="txt_ninth_1_paragraph_1">
+        This is the first day, and it is on Mount Tabor, where the Divine Child worked the mystery of the Transfiguration in his growing age, manifesting his glory to the three disciples. Where you will contemplate the humility and poverty with which our most pure Queen undertook her journey, and carrying nothing but a bit of bread and fruit for such long days, walking through those piles of snow, in a poor and humble trial. And to the Blessed Husband made page of stirrup of the Queen Mother, carrying on her shoulders the little bundle of clothes, and the trousseau of the Divine Child, guiding the judgment through the softer sidewalks. It also contemplates how, when arriving at that high mount, Saint Joseph formed a pavilion with its humble cloak among the branches, to resist the cold winds of the rigorous winter. Look, too, at the Divine Child, in that virginal bed, where bearing in mind the mystery of the Transfiguration, he looked at the few who were to follow him along the paths of the way of the cross, to reach the eternal inn of glory; the many who were to be lost on the pilgrimage and journey to eternity, on the broad path of perdition; and see what path you take to reach the high mountain of glory; and ask our sacred pilgrims to admit you into their company, to arrive safely at the Nativity Scene of glory.
+    </string>
+
+    <string name="txt_ninth_2_consideration_1">
+        The Eternal Word is about to take its nature created in the Holy House of Nazareth where Mary and Joseph lived. When the shadow of the divine secret came to glide over Mary, She was alone engulfed in prayer. She spent the silent hours of the night in closer union with God and while She was praying, the Word took up his abode created. However, He didn\'t come unexpectedly, before appearing He sent a messenger, who was the Archangel Gabriel, to ask Mary from God Her consent to the Incarnation. The Creator did not wish to make this great mystery without the consent of his creature.
+    </string>
+    <string name="txt_ninth_2_consideration_2">
+        That moment was very solemn. It was optional for Mary to decline… Which adorable treats; With what unspeakable indulgences await the Holy Trinity that Mary opened her lips and pronouns the fiat that should be soft melody to their ears, and which conformed to her deep humility to that omnipotent divine will!
+    </string>
+    <string name="txt_ninth_2_consideration_3">
+        The Immaculate Virgin has endorsed. The Archangel has disappeared. God has assumed a created nature, the eternal will is fulfilled and the whole creation consummated. The Word was made flesh, and though still invisible to the world, dwells among mankind and his great love has come to rescue.
+    </string>
+
+    <string name="txt_ninth_2_paragraph_1">
+        This is the second day, and it is the city of Nain, where the Child God raised the widow\'s son, in his growing age. Contemplate on this journey the works of our Queen and Lady experiencing the rains of heaven, the cold winds, the hardships of the road, her holy husband walking on foot, and removing the dirt from the rough sidewalks, cleaning the stony roads, tired, until you reach the city. Where can you consider in this Holy Patriarch, the shame that would pass at the doors of the inns, looking for an inn for his weary wife, the harsh and bland words with which the waiters said goodbye as interested people, the grief with which he would remain in the corner of the portal, increasing the pain of both spouses, to see God at the doors of an inn, without giving entrance to the same light: and you see how many times you have done the same, dismissing God from your heart with sin, for have your soul made a public inn of demons. Open this day the doors of your heart, and hear what your mother\'s womb tells you: look at my soul, in whose search I come to take you to my glory, I am knocking on the doors of your heart, open to me that I have nowhere to go recline your head.
+    </string>
+
+    <string name="txt_ninth_3_consideration_1">
+        It had begun incarnated life for Jesus the Child. Let us account the glorious soul and the Holy Body he had taken, to worship them deeply. Admire first the soul of the Divine Child, consider it the fullness of its beatific knowledge, by which from the first moment of His life saw more clearly the divine essence than all angels and read the past and the future with all their arcane and knowledge.
+    </string>
+    <string name="txt_ninth_3_consideration_2">
+        From the Soul of the Child Jesus we now turn to his body, which was a world of wonders, a masterpiece of God\'s hand. He wanted Him to be small and weak like all children and subject to all the inconveniences of childhood, to become more like us and participate in our humiliations. The beauty of the body of the Divine Child was beyond anything ever have imagined, and divine blood in his veins began to flow from the incarnation time, which was the one that washed all stains from guilty world. Let us ask Him to wash our stains in the sacrament of penance for the day of his happy Christmas (birth) found us purified, forgiven and willing to receive Him with love and spiritual profit.
+    </string>
+
+    <string name="txt_ninth_3_paragraph_1">
+        The third day of our most pure Queen, from the city of Nain to the fields of Samaría, where the ten lepers came to the Child God at his growing age. Consider, how many people who crossed that road, to comply with Caesar\'s edict, when seeing our sacred pilgrims in such extreme poverty, some ran over them, others separated them as humble and despicable people, and in this way, watch them arrive at the fields of Samaría, and with nowhere to stay, and what would the Holy Patriarch feel like staying in that deserted field, all sown with snow, without being able to alleviate the pain that the most tender and delicate girl would suffer with the cold airs, and what the Divine Child would suffer in his womb, when he saw his Blessed Mother treated in this way; and see how many times you run over the Child God, breaking her Holy Law, separating her from your heart and soul, for doing your pleasure and will; and try in this inn to go out to meet the Divine Child, to heal you like lepers by manifesting your wounds, because it does not come to anything other than to cure leprosy of all the human lineage.
+    </string>
+
+    <string name="txt_ninth_4_consideration_1">
+        From the womb of his mother the Child Jesus started to implement His entire submission to God, which continued without any interruption throughout His live. He adored his Eternal Father, He loved him, He submitted to his will, accepting with resignation the state in which He was, knowing all His weaknesses, all His humiliation and all His discomforts. Who of us would like to go back to a similar state and with full enjoyment of reason and reflexion?, Who could hold, knowingly so long, a martyrdom, so painful in anyway?. Through there the Divine Child came in His painful and humble career, and began to annihilate before his Father, to show us what God deserves from his infant, He came to atone (keep watch on) our pride, the source of all our sins, and make us feel crime and pride disorder.
+    </string>
+    <string name="txt_ninth_4_consideration_2">
+        We want to make a real prayer; let us start to form an exact notion by watching the Child in the womb of his mother, the Divine Child pray and pray in the most excellent way. He does not speak, does not meditate or melts in tender affections. On This state, He accepted the intention of honoring God, through his prayer and on His state He highly expressed all that God deserves and how it wishes to be worshipped by us.
+    </string>
+    <string name="txt_ninth_4_consideration_3">
+        Let us join with the prayers to Child Jesus in Mary\'s womb; let us unite to deep depression and let it be this the first affection of our sacrifice to God. Let us give ourselves to God, not to be something like our vanity continually seeks to be, but to be nothing; to be eternally consumed and overwhelmed, to renounce to ourselves stimulation, to all care of our greatness even spiritual, to any movement of vainglory. Let us disappear in front of our own eyes and God be the only thing to us.
+    </string>
+
+    <string name="txt_ninth_4_paragraph_1">
+        This is the fourth day, and the Siquén well, where the new works of our Queen and Lady are seen walking for a few moments on foot and others in the jumentillo and Santo José pulling the beast, bare feet and blistered; Where having arrived you can consider this day how having in view that water source our sovereign Queen, seeing that her blissful childbirth was approaching, the devotion with which unfolding the Divine Child\'s trousseau, kneeling on her knees, washes the shirt and cloths in which to wrap that rich treasure of heaven. Look and contemplate that fire of love in which her heart embraced, with the desire to see in her arms that Word made flesh, for our remedy.
+    </string>
+
+    <string name="txt_ninth_5_consideration_1">
+        We have seen the life that the Child Jesus carried in the womb of his most pure Mother; let us also see today the life that Mary lead during the same period of time. Today we need to understand through Her feelings, and as far as possible to our limited capability, the sublime mysteries of the Incarnation and the way we have to reciprocate it.
+    </string>
+    <string name="txt_ninth_5_consideration_2">
+        Mary never stopped wondering for the time that She would enjoy that terrestrial beatific vision, the face of God incarnate. She was about to see that human face that would light up the sky for all eternity, She was going to read filial love in those same eyes whose rays should spread happiness forever to the elected millions. She was going to see His face every day, every hour, every moment, for many years. She was going to see him in presumed ignorance of childhood, in the charms of his youth and reflective serenity of mature age… She would do anything He wanted to do, She could cuddle Him with all the freedom of maternal love; cover him with kisses over his lips which should pronounce the judgement to all men; She could contemplate His face as She like during His sleep or awake, until She had memorized it… how ardently She wished that day!
+    </string>
+    <string name="txt_ninth_5_consideration_3">
+        Such was the expectation of Mary… it was unprecedented in itself, but not so ceased to be part of a Christian life. Let us not be content admiring Jesus living in Mary, but rather let us admire how He was essence, power and presence.
+    </string>
+    <string name="txt_ninth_5_consideration_4">
+        Yes, Jesus is born continuously in us and of us, in a way of good works that enables us to meet our cooperation and grace, so that the soul within the grace is in a perpetual womb of Mary, one endless Bethlehem. After communion Jesus dwells in us, for a few moments, He is really, substantially as God and man, because the same child that was in Mary is also in the Blessed Sacrament. What is all this? but a participation in the life of Mary during those wonderful months, and an expectation full of delights like Hers.
+    </string>
+
+    <string name="txt_ninth_5_paragraph_1">
+        Walk, my soul, in the company of our sacred pilgrims without losing sight of them, and contemplate on this fifth day what our most pure Queen did from the well of Siquén to the so-called Necmas; contemplate what the venerable Mother, María de Jesús de Ágreda, says; that many times the Blessed Virgin stayed among the sheep pens, because men did not give her a better place; for he considers this day that, not finding an inn in this short place, he retires to the mountain, entering through the doors of the hut, the lambs and the sheep rise up joyfully, and with their bleats offer him that humble place, retiring, as says the venerable Mother, in a corner, recognizing her Lord and Creator. Consider, then, the humility of the Blessed Virgin and Queen of the angels, watch her get off the racket, take refuge among the thorns; and contemplate what would be the thoughts of that divine Shepherd in the bowels of her Mother, who came to look for the lost sheep, what tears would shed for the times that she was to be kept among the thorns of sins.
+    </string>
+
+    <string name="txt_ninth_6_consideration_1">
+        Jesus was conceived in Nazareth, home of Joseph and Mary, where he was believed to be born, in all probability. But God had arranged differently and the prophets had foretold that the Messiah would be born in Bethlehem, the city of David. To fulfill this prediction, God used a method that seemed to have no connection with the prophecy, namely the order given by the Emperor Caesar Augustus, that all the subjects of the Roman Empire census in the place where they originated. Mary and Joseph, who were descendants of David, were not exempt from going to Bethlehem. Neither the status of Our Lady or the need that Joseph had of daily secure livelihood, could exempt them from this long and arduous journey, in the most rigorous and uncomfortable season of the year.
+    </string>
+    <string name="txt_ninth_6_consideration_2">
+        Jesus does not ignore the place where He must be born and inspires His parents to surrender to divine guidance, and unconsciously made them attend to the execution of the God\'s plans. That our Inner souls, watch this management of the Divine Child, because it is the most important spiritual life, let us learn to whom is dedicated to God not to belong to themselves, nor to love every moment but what God wants for us, blindly follow Him even in trivial things, such as change of place wherever He pleases to lead you. Will have chance to observe this dependence and inviolable fidelity throughout the life of Jesus Christ, and this is the point on which the saints and truly inner souls have taken pains to imitate Him, giving absolutely up to their own will.
+    </string>
+
+    <string name="txt_ninth_6_paragraph_1">
+        See the sixth day that these sovereign princes did until they reached the place where they lost the Divine Child Jesus, at twelve years of age, where you can consider the work that this tender and delicate girl would suffer in that bent land, already climbing the high mountains, covered with snow, already passing the mountain range, until reaching that uninhabited place, where seeing the Holy Patriarch tormented by inclement weather, begged her to take some rest and refreshment to continue the day, and while the holy husband sought some shade for her , who overshadows everyone with her intercession, contemplates the pain that would be suffered in Child God in her womb, bearing in mind what her most holy Mother was to suffer, losing her in that place, and the little feeling that men had to lose to God, his friendship, grace and love.
+    </string>
+
+    <string name="txt_ninth_7_consideration_1">
+        Let us imagine the journey of Mary and Joseph to Bethlehem, carrying with them an unborn, the Creator of the universe made man. Let us contemplate humanity and obedience of the Divine Child that even from Jewish race and having loved his people for centuries with an unaccountable penchant, Who obeys a foreign prince who is part of the population census of his province, as if for Him had something that flattered in that circumstance, and He wanted to rush to seize the opportunity to become an official and authentically subject at the time when He was coming to the world. Is not it strange that humiliation, that causes so incredible repugnance to the creature, which appears to be the only thing devise that has appeal to the Creator? Will not the humility of Jesus teach us to love this beautiful merit?
+    </string>
+    <string name="txt_ninth_7_consideration_2">
+        Ah… the time has come to display the one desired of the nations, because all calls for this happy event, the world plunged into darkness and discomfort sought and not finding relief from their ills, pines for their Liberator. The yearning to Joseph, the expectation of Mary, are a thing which no human language can express. The Eternal Father is, if we may use this expression, adorably eager to give his only Son into the world, and to see him take his place among the visible creatures. The Holy Spirit is burning to present to the light of day this sacred humanity so beautiful that He himself has formed so special and with divine care. Divine Child, object of many desires, let us remember what is moving to Bethlehem is moving towards us, let us hasten our desire upon His arrival; purify our souls to be his mystical abode, and our hearts to be his earthly Manis, that our acts of mortification and detachment prepare the way of the Lord and make straight his paths.
+    </string>
+
+    <string name="txt_ninth_7_paragraph_1">
+        This is the seventh day and it is the holy city of Jerusalem, where the immensity of sorrows that our Queen and Lady would suffer are contemplated, when passing through those streets, she contemplated, as one who knew how much in that ungrateful city her Divine had to suffer Jesus, the painful days that he had to make from Court to Court, and in the inns so bad that he had to find, and in those Praetories and Courts, consideration that brought tears to his eyes. Contemplate the torment that the Child God would suffer in her womb; there, I would say, they will slap me, and in that house they will open a cell to put me imprisoned; in that palace the doors will be opened to torment me with more than five thousand lashes; and in that court they will treat me like crazy and simple. With this consideration they would arrive at Monte Calvario.
+    </string>
+
+    <string name="txt_ninth_8_consideration_1">
+        Joseph and Mary arrived to Bethlehem, seeking accommodation in the inns, but they are already found all busy, and because they are discriminate because of their poor looking. However, this can not disturb the inner peace that is fixed in God. Joseph felt surprise when he was rejected from house to house, and because He thought of Mary and the Child, He smiled also so calmly when he setted his eyes on his chaste wife. The unborn child rejoiced on those negative response which were the prelude to his future humiliations. Each voice rough, the slam of each closed door before them, was what he had come for. The desire of these humiliations was what had helped him to take human form.
+    </string>
+    <string name="txt_ninth_8_consideration_2">
+        O divine Child of Bethlehem! These days that so many (people) have been at parties and entertainment or comfortable resting softly in rich mansions, your parents have been to a day of fatigue and abuse of all kinds. Oh! Bethlehem\'s spirit is that of a world that has forgotten God. How many times has also we been like them, let us not closed continuously with rude ignorance the door to the calls of God, who is asking us to become, or sanctify or conform to his will? Do not we misuse our sorrows, ignoring their heavenly character that each of us in own our way, has engraved it? God comes to us many times in life, but we do not know his face, or recognize him until we turned his back and walks away after our refusal.
+    </string>
+    <string name="txt_ninth_8_consideration_3">
+        The sun sets on December 24 behind the rooftops of Bethlehem and its last rays gild the tops of steep rocks surrounding it. Rude men rub roughly the Lord in the streets of this village east, and close their doors after seeing his mother, The dome of heaven appears glitter over those hills frequented by shepherds. The stars will appear one after another. Within a few hours will come the eternal Word.
+    </string>
+
+    <string name="txt_ninth_8_paragraph_1">
+        Contemplate the eighth day from Jerusalem until reaching Bethlehem, where our sacred pilgrims having arrived at four in the afternoon, when the Holy Patriarch thought to find a safe inn for the Mother of God, among his relatives, relatives and acquaintances, ending and ending to their jobs; Then her sorrows multiplied, because having complied with Caesar\'s edict, they came to the doors of the relatives to look for an inn and they all hit them in the face. Consider the great feeling that your troubled heart would suffer in those streets looking at the doors of the inns for a portal or haystack for the Empress of heaven. The mortification that he would suffer with the harsh and bland words with which they dismissed them, treating the holy husband as idle and homeless, seeing her with so much humility and poverty: what tears would not spill his eyes! And more so when, having entered the night and splitting the snow, running through the cold airs and having nowhere to close his eyes, he looked at his most holy helpless and tearful wife with the contempt of men. Consider also what the Divine Child would feel when he saw his Mother, pierced with such a bloody knife of pain, what tears would he shed in his bowels, when he saw her loving calls despised! The voluntary deafness of men, the welcome that the world gave him. And after having racked all the inns and houses of the powerful without finding a portal for their rest; watch them leave at nine o\'clock at night, sad, tearful, afflicted and helpless to look for among the irrational the mercy that men denied them.
+    </string>
+    <string name="txt_ninth_8_paragraph_2">
+        What are you doing, my soul, that the doors of your heart of pain do not open, to give lodging to the Blessed Virgin Mary and the Child God? Try to go out to meet them and bring the Divine Child to your soul, receiving her sacramented this day, so that at the end of your journey she will open the doors of her glory to you.
+    </string>
+
+    <string name="txt_ninth_9_consideration_1">
+        The night closed entirely in the plains of Bethlehem. Discarded by men, and homeless, Mary and Joseph have left the inhospitable town and have taken refuge in a grotto that was at the foot of the hill. The ass that had served to the Queen of the Angels as a humble ride during the trip was still following her. Inside the grotto they found a willing ox, probably left there by one of the walkers who had come to look for a shelter in the city. The Divine Child, unknown to his rational creatures, will have to resort to the irrationals creatures, to praise for their warm breath to warmed the cold clime of the winter night, and manifest with this their humble attitude, respect and adoration that Bethlehem had been denied Him. The redish lantern that Joseph had on in his hand dimly lit the very poor enclosure, the manger full of hay is prophetic picture of the wonders of the altar, and also the intimate union and prodigious eucharistic that Jesus has to engage with men. Mary is praying in the middle of the grotto, and so silently are passing the hours of that night filled with mystery.
+    </string>
+    <string name="txt_ninth_9_consideration_2">
+        But midnight has come, and suddenly we see within that manger, shortly before empty, the Divine Child expected, predicted, desired for four thousand years with ineffable longing. At His feet prostrates his Blessed Mother, submerged in worship from which nobody can have idea. Joseph also comes over and pays tribute with this he officially inaugurates his mysterious and imponderable role of foster father to the Redeemer of men. A multitude of angels descend from the heavens to contemplate that wonder unparalleled, they burst their joy and leave harmonies vibrate in the air of in Excelsis Glory that echoes of worship that occurs around the Almighty, made it perceptible for a moment to the ears of the poor Earth. Called by them, shepherds of the region come in droves to worship the newborn and present their humble offerings. Shines in the East the mysterious star of Jacob, and it begins the “Wise Men” splendid procession to Bethlehem, who in a few days come to lay at the feet of the Divine Child gold, frankincense, and myrrh, they are symbols of love, worship and mortification.
+    </string>
+    <string name="txt_ninth_9_consideration_3">
+        Oh beloved Child! We too, who have made this novena to prepare your day of Christmas, we want to offer our poor worship. Do not reject it! Come to our souls, come to our hearts full of love! Ignite on them devotion to your holy continuous childhood but limited to the time of your Christmas, always and in all times; this devotion practiced faithfully and zealously propagated, lead us to eternal life, freeing us from sin and sowing all the Christian virtues.
+    </string>
+
+    <string name="txt_ninth_9_paragraph_1">
+        We have arrived, my soul, at the last inn and palace that the Eternal Father provided to his Only Begotten for his birth and it is a humble cave and manger of animals, where you can consider how, having arrived the two sacred pilgrims, they give thanks to the Eternal Father for that humble and despised hospice; then they sweep it and clean it, and its imitation the angels that guard our Queen and Lady; look and see how the holy husband unfolded the bundle, and from the humble clothes forms the manger that served as a bed for the delivery of the Queen Mother, a bed for her rest and, having made a fire with the instruments she carried, she retires to a corner of the portal, and at midnight, feeling our great Queen and Lady, it was time for her blissful childbirth, kneeling on her knees, putting her hands on her chest, her eyes raised to heaven, her powers and senses raised, and all deified , gave the world to the Only Begotten of the Eternal Father and his, Christ Jesus, God and true man, whom he adored in the arms of Saint Michael, and receiving him with deep humility and reverence in his most holy arms, the holy angels adored him (as in the sacred altar) as your true God, Lord and Creator. Contemplate the joy of the Lord Saint Joseph when waking up from that sweet dream (in which he was looking at such a sovereign mystery) saw in the arms of the Aurora the divine sun of justice banishing the shadows of the night, with its inaccessible light, making the world happy with his coming; and that humble cave made an abbreviated sky, and seeing him shiver with cold and pouting his Blessed Mother, who wraps him in those humble diapers, shelters him between her breasts, gives him her sweet nectar and puts him between straw and hay, where animals adore him as his Maker and Lord.
+    </string>
+    <string name="txt_ninth_9_paragraph_2">
+        And with the news that the shepherds had for an angel, with joy and joy, they come in search of light, they enter the cave, and congratulating the Blessed Mother, they receive the Child in their arms with singular joy and joy to see God made a tender child in a stable, his arms girded, wrapped in mantillas, and the Lion of Judah made a humble lamb in a cave.
+    </string>
+
+    <string name="title_ninth_joys">Aspirations for the Coming of the Child Jesus</string>
+
+    <string name="txt_ninth_joy_begin">
+        Sweet Jesus of mine,\nmy beloved child.
+    </string>
+    <string name="txt_ninth_joy_end">
+        Come on our Saviour,\nfor whom we sighs!
+    </string>
+    <string name="txt_ninth_joy_answer">
+        Come to our souls!\nCome and don\'t delay!
+    </string>
+    <string name="txt_ninth_joy_1">
+        Oh Wisdom sum\nfrom the sovereign God,\nthat a childish reach\nYou have lowered!\nO Divine Child,\ncome to teach us\nprudence that makes\ntruly wise men!
+    </string>
+    <string name="txt_ninth_joy_2">
+        Oh, Mighty God (Adonai)\nthat to Moses had spoken,\nand gave him the commands\nfor the Israeli people!\nOh, come promptly\nto rescue us,\nand as weak child\nshow an outstretched arm!
+    </string>
+    <string name="txt_ninth_joy_3">
+        Oh, Joseph\'s sacred root\nthat from the highest\nsubmits to orb\nyour fragrant tuberose!\nSweetest Child\nthat has been called\nLily of the Valley,\nBeautiful flower of the field.
+    </string>
+    <string name="txt_ninth_joy_4">
+        O David\'s key\nthat opens to exiled\nthe closed doors\nof the Royal palace!\nGet us out!, Oh Boy\nwith your white hand,\nfrom this sad jail\nseated in sin!
+    </string>
+    <string name="txt_ninth_joy_5">
+        Oh Eastern Fire,\nsplendor of eternal light\nthat in the darkness\nyour shine we will see!\nChild so precious,\nbliss of the Christian,\nflaunt your smile\nfrom your sweet lips.
+    </string>
+    <string name="txt_ninth_joy_6">
+        Unspotted mirror,\nholy of holies,\nunsurpassed image\nof sovereign God!\nErase our sins,\nsave the banished\nand as a child,\ngive the miserable shelter!
+    </string>
+    <string name="txt_ninth_joy_7">
+        Oh King of the nations,\nEmmanuel illustrious,\nFrom Israel yearning,\nyou are Shepherd of the flock!\nChild who grace\nwith soft arch\nthe surly sheep\nand the meek lamb!
+    </string>
+    <string name="txt_ninth_joy_8">
+        Open up the heavens\nand rain from above\nbeneficent dew\nas a holly irrigation!\nBeautiful Child come,\ncome incarnate God!\nFlaunt God star!\nSpring up, flower of the field!
+    </string>
+    <string name="txt_ninth_joy_9">
+        Come, that Mary\nprevents her arms,\nfor her child to see,\nin near time!\nCome, that Joseph,\nwith longing sacrum,\nhas disposed him\nto take your holly love!
+    </string>
+    <string name="txt_ninth_joy_10">
+        From weaken relief\nand suffered under,\nYou are comfort for the sad\nand light for the exiled!\nLife of my life,\nmy beloved Owner,\nmy unfailing friend,\nmy divine brother!
+    </string>
+    <string name="txt_ninth_joy_11">
+        Come in my eyes,\nthey inspire love!\nAnd kiss your feet!\nkiss your hands!\nI am prostrated on the ground,\nmy arms are stretched,\nand even more to my sentences,\nmy tears say!
+    </string>
+</resources>

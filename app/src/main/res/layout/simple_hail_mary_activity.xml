@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prayers.app.activity.simple.SimpleHailMaryActivity">
+
+    <TextView
+        android:id="@+id/title_hail_mary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/margin_top"
+        android:text="@string/title_hail_mary"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_25" />
+
+    <ScrollView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_prev"
+        android:layout_below="@+id/title_hail_mary"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_60"
+            android:paddingBottom="@dimen/margin_40">
+
+            <TextView
+                android:id="@+id/txt_hail_mary_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/txt_hail_mary_1"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/txt_hail_mary_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_hail_mary_1"
+                android:paddingTop="@dimen/margin_60"
+                android:text="@string/txt_hail_mary_2"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/lbl_amen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_hail_mary_2"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/margin_60"
+                android:text="@string/txt_amen"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_30" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/simple_prayers_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.3"
+        android:paddingTop="@dimen/margin_50"
+        app:srcCompat="@mipmap/tuure_2_vert" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="@dimen/width_close_40"
+        android:layout_height="@dimen/height_close_40"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding"
+        android:text="@string/txt_close"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/close_text_size_20" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding"
+        android:text="@string/txt_prev"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_size_12" />
+</RelativeLayout>

@@ -1,0 +1,595 @@
+<resources>
+    <string name="app_name">Oraciones Católicas</string>
+    <string name="app_description">Oraciones para hablar con Dios.</string>
+
+    <string name="title_home">Inicio</string>
+    <string name="title_special_prayers">Oraciones Especiales</string>
+    <string name="title_simple_prayers">Oraciones Sencillas</string>
+
+    <string name="title_settings_short">Config</string>
+    <string name="title_settings">Configuración</string>
+
+    <string name="preferences_category_general">General</string>
+    <string name="preferences_language">Idioma</string>
+    <!-- NOTE: Has to correspond to array "locales" in locales.xml (elements in same orderwith) -->
+    <string-array name="settings_language_values">
+        <item>Por defecto (Configuración del sistema)</item>
+        <item>Inglés</item>
+        <item>Español</item>
+    </string-array>
+
+    <string name="title_rosary">Santo Rosario</string>
+    <string name="title_ninth">Novena de Aguinaldos</string>
+
+    <string name="title_our_father">Padre Nuestro</string>
+    <string name="title_hail_mary">Ave María</string>
+    <string name="title_glory_be">Gloria</string>
+    <string name="title_fatima">Oración de Fátima</string>
+    <string name="title_hail_holy_queen">Salve</string>
+    <string name="title_st_michael_short">Oración a San Miguel</string>
+    <string name="title_st_michael_long">Oración al Arcángel San Miguel</string>
+    <string name="title_magnificat">Magnificat</string>
+    <string name="title_apostles_creed">Credo de los Apóstoles</string>
+
+    <string name="txt_amen">Amén</string>
+    <string name="txt_pray">Rezar</string>
+    <string name="txt_prev">Anterior</string>
+    <string name="txt_next">Siguiente</string>
+    <string name="txt_end">Fin</string>
+    <string name="txt_begin">Iniciar</string>
+    <string name="txt_save">Guardar</string>
+
+    <string name="txt_progress">%s de %s</string>
+
+    <string name="txt_num">#</string>
+    <string name="txt_blank"> </string>
+    <string name="txt_close">X</string>
+
+    <string name="title_welcome">¡BIENVENIDO!</string>
+    <string name="txt_welcome">
+        Aquí traemos una recopilación de todas las oraciones católicas más importantes,
+        para que puedas mantener una comunicación mucho más cercana y efectiva
+        con el Señor.
+    </string>
+
+    <string name="txt_close_dialog">¿Estás seguro de que deseas ir al Inicio?</string>
+    <string name="txt_yes_choice">Sí</string>
+    <string name="txt_no_choice">No</string>
+
+    <string name="txt_our_father_1">
+        Padre Nuestro, que estás en los Cielos,\nsantificado sea Tu Nombre.\nVenga a nosotros Tu Reino.\nHágase Tu Voluntad, así en la Tierra\ncomo en el Cielo.
+    </string>
+    <string name="txt_our_father_2">
+        Danos hoy nuestro pan de cada día.\nPerdona nuestras ofensas,\nasí como nosotros perdonamos\na los que nos ofenden.\nNo nos dejes caer en la tentación,\ny líbranos del mal.
+    </string>
+
+    <string name="txt_hail_mary_1">
+        Dios te salve María, llena eres de gracia,\nel Señor es contigo;\nbendita tú eres entre todas las mujeres,\ny bendito es el fruto de tu vientre, Jesús.
+    </string>
+    <string name="txt_hail_mary_2">
+        Santa María, Madre de Dios\ny Madre nuestra,\nruega por nosotros pecadores,\nahora y en la hora de nuestra muerte.
+    </string>
+
+    <string name="txt_glory_be_1">
+        Gloria al Padre,\ngloria al Hijo,\ngloria al Espíritu Santo.
+    </string>
+    <string name="txt_glory_be_2">
+        Como era en un principio,\nahora y siempre,\npor los siglos de los siglos.
+    </string>
+
+    <string name="txt_hail_holy_queen_1">
+        Dios te salve, Reina y Madre, Madre de misericordia,\nVida, dulzura y esperanza nuestra. Dios te salve.\nA tí clamamos los desterrados hijos de Eva.\nA tí suspiramos gimiendo y\nllorando en este valle de lágrimas.\nEa, pues Señora, abogada nuestra.\nVuelve a nosotros esos tus ojos misericordiosos,\ny después de este destierro, muéstranos a Jesús,\nFruto bendito de tu Vientre.\n¡Oh clemente! ¡Oh piadosa! ¡Oh dulce siempre Virgen María!
+    </string>
+    <string name="txt_hail_holy_queen_2">
+        Ruega por nosotros, Santa Madre de Dios,\npara que seamos dignos de alcanzar las promesas y gracias\nde nuestro Señor Jesucristo.
+    </string>
+
+    <string name="txt_st_michael_1">
+        San Miguel Arcángel, defiéndenos en la pelea.\nSé nuestro amparo contra la maldad y las asechanzas del demonio.\nHágale oír Dios su voz imperiosa como se lo suplicamos.
+    </string>
+    <string name="txt_st_michael_2">
+        Y tú, príncipe de la Milicia Celestial, armado del Poder Divino,\nprecipita al infierno a Satanás y a todos los espíritus malignos que,\npara la perdición de las almas, andan por el mundo.
+    </string>
+
+    <string name="txt_magnificat_quote">(Lc 1, 46–55)</string>
+    <string name="txt_magnificat_horiz">Magnificat (Lc 1, 46–55)</string>
+    <string name="txt_magnificat_1">
+        Mi alma alaba la grandeza del Señor;\nmi espíritu se alegra en Dios mi Salvador.\nPorque Dios ha puesto sus ojos en mí, su humilde esclava, y desde ahora siempre me llamarán dichosa;\nporque el Todopoderoso ha hecho en mí grandes cosas.\n¡Santo es su nombre!
+    </string>
+    <string name="txt_magnificat_2">
+        Dios tiene siempre misericordia de quienes lo reverencian.\nActuó con todo su poder:\ndeshizo los planes de los orgullosos.\nDerribó a los reyes de sus tronos y puso en alto a los humildes.\nLlenó de bienes a los hambrientos y despidió a los ricos con las manos vacías.
+    </string>
+    <string name="txt_magnificat_3">
+        Ayudó a Israel, su siervo, y no se olvidó de tratarlo con misericordia.\nAsí lo había prometido a nuestros antepasados, Abraham y a sus futuros descendientes.
+    </string>
+
+    <string name="txt_apostles_creed_1">
+        Creo en Dios, Padre Todopoderoso, creador del Cielo y de la Tierra.\nCreo en Jesucristo, su único Hijo, nuestro Señor, que fue concebido\npor obra y gracia del Espíritu Santo; nació de Santa María Virgen;\npadeció bajo el poder de Poncio Pilatos; fue crucificado, muerto y\nsepultado; descendió a los infiernos; al tercer día resucitó de entre\nlos muertos; subió a los Cielos y está sentado a la derecha de Dios,\nPadre Todopoderoso; desde allí ha de venir a juzgar a los vivos y a\nlos muertos.
+    </string>
+    <string name="txt_apostles_creed_2">
+        Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de\nlos santos, el perdón de los pecados, la resurrección de los muertos\ny la vida eterna.
+    </string>
+
+    <string name="txt_fatima_1">
+        Oh mi buen Jesús, perdona nuestros pecados.\nLíbranos del fuego del infierno y lleva al Cielo a todas las almas,\nespecialmente a las más necesitadas de tu infinita Misericordia.
+    </string>
+    <string name="txt_fatima_2">
+        María, llave espiritual de nuestra fe,\nrogad por nosotros que nos refugiamos en tí.
+    </string>
+    <string name="txt_fatima_3">
+        María, madre de gracia, madre de misericordia,\ndefiéndenos del enemigo y ampáranos,\nahora y en la hora de nuestra muerte.
+    </string>
+
+    <string name="title_sign_cross">Señal de la Cruz</string>
+    <string name="txt_sign_cross_1">Por la señal de la Santa Cruz, de nuestros enemigos líbranos, Señor Dios Nuestro.</string>
+    <string name="txt_sign_cross_2">En el nombre del Padre, del Hijo y del Espíritu Santo.</string>
+
+    <string name="title_rosary_offering">Ofrecimiento del Rosario</string>
+    <string name="txt_rosary_offering">(Aquí se hacen los ofrecimientos, peticiones o razones por las que se realiza este Rosario)</string>
+
+    <string name="title_rosary_joyful">Misterios Gozosos</string>
+    <string name="title_rosary_joyful_with_days">Misterios Gozosos (Lunes y Sábado)</string>
+    <string name="title_rosary_joyful_only_days">(Lunes y Sábado)</string>
+    <string name="txt_rosary_joyful_1">La anunciación del Ángel y la encarnación del Verbo</string>
+    <string name="txt_rosary_joyful_2">La visitación de María a su prima Santa Isabel</string>
+    <string name="txt_rosary_joyful_3">El nacimiento del niño Jesús en Belén</string>
+    <string name="txt_rosary_joyful_4">La presentación del niño Jesús en el templo y la purificación de María</string>
+    <string name="txt_rosary_joyful_5">La pérdida y hallazgo del niño Jesús en el templo</string>
+
+    <string name="title_rosary_sorrowful">Misterios Dolorosos</string>
+    <string name="title_rosary_sorrowful_with_days">Misterios Dolorosos (Martes y Viernes)</string>
+    <string name="title_rosary_sorrowful_only_days">(Martes y Viernes)</string>
+    <string name="txt_rosary_sorrowful_1">La agonía de Jesús en el huerto de los Olivos</string>
+    <string name="txt_rosary_sorrowful_2">La sangrienta flagelación de Jesús</string>
+    <string name="txt_rosary_sorrowful_3">La coronación de espinas de Jesús</string>
+    <string name="txt_rosary_sorrowful_4">A Jesús con la cruz a cuestas, camino del calvario</string>
+    <string name="txt_rosary_sorrowful_5">La crucifixión y muerte de Jesús</string>
+
+    <string name="title_rosary_glorious">Misterios Gloriosos</string>
+    <string name="title_rosary_glorious_with_days">Misterios Gloriosos (Miércoles y Domingo)</string>
+    <string name="title_rosary_glorious_only_days">(Miércoles y Domingo)</string>
+    <string name="txt_rosary_glorious_1">La resurrección de Jesús</string>
+    <string name="txt_rosary_glorious_2">La ascención del Señor a los Cielos</string>
+    <string name="txt_rosary_glorious_3">La venida del Espíritu Santo sobre Nuestra Señora y los apóstoles</string>
+    <string name="txt_rosary_glorious_4">La asunción de María a los Cielos</string>
+    <string name="txt_rosary_glorious_5">La coronación de Nuestra Señora como Reina Universal de todo lo creado</string>
+
+    <string name="title_rosary_luminous">Misterios Luminosos</string>
+    <string name="title_rosary_luminous_with_days">Misterios Luminosos (Jueves)</string>
+    <string name="title_rosary_luminous_only_days">(Jueves)</string>
+    <string name="txt_rosary_luminous_1">El bautismo de Jesús en el río Jordán</string>
+    <string name="txt_rosary_luminous_2">La realización del Primer Milagro de Jesús, convirtiendo el agua en vino en las bodas de Caná</string>
+    <string name="txt_rosary_luminous_3">La predicación de Jesús, anunciando el Reino de Dios e invitando a la conversión</string>
+    <string name="txt_rosary_luminous_4">La Transfiguración de Jesús en el Monte Tabor</string>
+    <string name="txt_rosary_luminous_5">La institución de la Eucaristía en la Última Cena</string>
+
+    <string name="txt_rosary_choose_mystery">Escoje un misterio para empezar</string>
+    <string name="txt_rosary_auto_mystery">O no selecciones ninguno y deja que seleccionemos el misterio por tí</string>
+    <string name="txt_rosary_reflection">Breve reflexión</string>
+    <string name="txt_rosary_pause">(Pausa para meditación)</string>
+
+    <string name="txt_rosary_joyful_1_paragrafh_1">
+        La primogénita de todas las criaturas, la síntesis del orden del universo, la Madre de la Sabiduría, no fue capaz de imaginar cómo sería posible realizarse en Ella la Encarnación del Verbo. \"… Ninguna cosa es imposible para Dios\" le dijo el ángel. De un lado, la humildad perfectísima de una Virgen, de otro, el poder absoluto de Dios. La omnipotencia se deja atraer por la humildad.
+    </string>
+    <string name="txt_rosary_joyful_1_paragrafh_2">
+        Por este Misterio, pidamos la intercesión de la Santísima Virgen para que sea infundida en nuestra alma el mismo don de humildad que Ella posee, y una entera confianza en la omnipotencia divina.
+    </string>
+
+    <string name="txt_rosary_joyful_2_paragrafh_1">
+        Inmediatamente resonó allí la voz de la Madre del Verbo Encarnado, toda la familia del Bautista se vio llena de gracias y bendiciones celestiales, en una primera manifestación de la inagotable riqueza de beneficios y misericordias que Jesús traía al mundo.
+    </string>
+    <string name="txt_rosary_joyful_2_paragrafh_2">
+        Por este Misterio, pidamos la intercesión de la Santísima Virgen para obtener la gracia de estar siempre atentos a la voz de María en nuestro interior, y de una ardiente caridad para con nuestro prójimo.
+    </string>
+
+    <string name="txt_rosary_joyful_3_paragrafh_1">
+        El cielo y la tierra celebran el nacimiento del Salvador. Y en la gruta de Belén, la Santísima Virgen tomó reverentemente al Niño Jesús y lo estrechó a su pecho. Imaginemos los sentimientos de devoción, de ternura y de amor que experimentó María al ver en sus brazos al Señor del mundo, el Hijo del Eterno Padre que se había dignado hacerse también Hijo de Ella, eligiéndola por Madre entre todas las mujeres.
+    </string>
+    <string name="txt_rosary_joyful_3_paragrafh_2">
+        Por este Misterio y por la intercesión de la Santísima Virgen pidamos la gracia de conservar siempre todas \"las palabras\" que nos sean dichas por el Espíritu Santo en nuestro interior, y meditarlas en nuestros corazones.
+    </string>
+
+    <string name="txt_rosary_joyful_4_paragrafh_1">
+        Delante del Sumo Bien, no puede haber una posición de neutralidad: o la adhesion o el rechazo. Si seguimos los caminos del Evangelio, se dará con nosotros lo mismo que le sucedió a Jesús.
+    </string>
+    <string name="txt_rosary_joyful_4_paragrafh_2">
+        Por este Misterio y la intercesión de la Santísima Virgen, pidamos la gracia de cumplir la Ley con perfección, aceptando con amor y resignación las contradicciones que podamos causar en los otros, por nuestros dones o virtudes.
+    </string>
+    <string name="txt_rosary_joyful_4_paragrafh_3">
+        Gracias al Misterio de la Presentación, descended en nuestras almas. Amén.
+    </string>
+
+    <string name="txt_rosary_joyful_5_paragrafh_1">
+        Tan pronto se dieron cuenta de su desaparición, María y José se pusieron inmediatamente a buscar a Jesús. Ejemplo excelso para nosotros: si por culpa o no llegásemos a perder a Jesús, busquémoslo con toda prontitud.
+    </string>
+    <string name="txt_rosary_joyful_5_paragrafh_2">
+        Por este Misterio y la intercesión de la Santísima Virgen, pidamos la gracia de jamas perder a Jesús; pero si esto se diere, pidamos la gracia de buscarlo con la misma diligencia que Ella y San José tuvieron.
+    </string>
+
+    <string name="txt_rosary_sorrowful_1_paragrafh_1">
+        Las oraciones de Jesús al Padre constituyen una de las mas bellas escenas del Evangelio. ¿Dónde encontrar en toda la obra de la creación, un relacionamiento con Dios tan rico cuanto aquel? Jesús es para nosotros el divino ejemplo y consejero. Aprendamos de Él a rezar para no caer en la tentación.
+    </string>
+    <string name="txt_rosary_sorrowful_1_paragrafh_2">
+        Por este Misterio pidamos la intercesión de la Santísima Virgen para obtener la gracia de beneficiarnos plenamente de las oraciones de Jesús, en especial de ésta, hecha en el Huerto de los Olivos, y así seamos contemplativos con Él.
+    </string>
+
+    <string name="txt_rosary_sorrowful_2_paragrafh_1">
+        En este Misterio Pilatos manda a flagelar a Jesús por temor a las autoridades judías. Esta es la actitud frecuente de todos los que buscan una posición neutra entre el bien y el mal: en situaciones críticas prefieren de cierta manera sacrificar algo del bien, en busca de un ablandamiento del mal. Como Pilatos no encontró crimen alguno en Jesús, lo mandó flagelar.
+    </string>
+    <string name="txt_rosary_sorrowful_2_paragrafh_2">
+        Por este Misterio, pidamos la intercesión de la Santísima Virgen para obtener la gracia de siempre atender con entusiasmo y perfección a los llamados de Dios, a fin de no seguir jamás el ejemplo de Pilatos, mandando a flagelar a Jesús.
+    </string>
+
+    <string name="txt_rosary_sorrowful_3_paragrafh_1">
+        Por este Misterio, pidamos la intercesión de la Santísima Virgen para obtener la gracia de soportar con humildad y resignación las injurias y ofensas, aunque sean injustas, manteniendo siempre como Jesús un alto sentido de nuestra dignidad.
+    </string>
+
+    <string name="txt_rosary_sorrowful_4_paragrafh_1">
+        Inmediatamente después de haber sido condenado por Pilatos, Nuestro Señor Jesucristo tomó la cruz sobre los hombros para llevarla al Calvario y en ella morir crucificado. La cargó con amor indecible, pues deseaba levantar bien alto el estandarte bajo el cual deberían alistarse sus seguidores en esta tierra. Bajo su peso, Jesús alcanzaba nuestra salvación; y con su ejemplo, nos daba fuerza para que abrazásemos las pruebas de esta vida. Es a través de la cruz que con Él compartiremos después el Reino de los Cielos.
+    </string>
+    <string name="txt_rosary_sorrowful_4_paragrafh_2">
+        Por este Misterio y por la intercesión de la Santísima Virgen pidamos la gracia de la paciencia, el coraje y la fortaleza necesarias para cargar todas nuestras cruces.
+    </string>
+
+    <string name="txt_rosary_sorrowful_5_paragrafh_1">
+        He aquí la grandeza y el misterio de un Dios que se hace hombre y permite ser muerto en la cruz para redimir al género humano. Un solo gesto suyo sería suficiente para obrar esta redención; sin embargo, prefirió entregar hasta la última gota de su sangre preciosísima.
+    </string>
+    <string name="txt_rosary_sorrowful_5_paragrafh_2">
+        ¿Y qué debemos hacer nosotros para retribuir tan divina bondad? Sí, \"amor con amor se paga\"; sólo entonces con un amor sin límites y exclusivo con relación a Jesús y a su Madre Santísima seremos justos para con nuestro Salvador.
+    </string>
+    <string name="txt_rosary_sorrowful_5_paragrafh_3">
+        Por este Misterio y la intercesión de la Santísima Virgen, pidamos la gracia de la conversión de los pecadores, la perseverancia de los justos y el alivio de las almas del purgatorio.
+    </string>
+
+    <string name="txt_rosary_glorious_1_paragrafh_1">
+        Nuestro Señor triunfó sobre la muerte y el pecado. Redimido el género humano y abiertas nuevamente para nosotros las puertas del cielo, el alma sacratísima de Jesús se reúne a su adorable Cuerpo en el sepulcro, de donde sale para aparecer a su Santa Madre, a las santas mujeres y a sus apóstoles y discípulos.
+    </string>
+    <string name="txt_rosary_glorious_1_paragrafh_2">
+        Por este Misterio y por la intercesión de la Santísima Virgen, pidamos la gracia de tener siempre presente en nuestra memoria la escena de la Resurrección y del juicio final,
+        en el cual todos podrán conocer la totalidad de las obras de los hombres.
+    </string>
+
+    <string name="txt_rosary_glorious_2_paragrafh_1">
+        Después de prometer a los Apóstoles la venida del Espíritu Santo, Nuestro Señor se elevó por su propio poder hasta el cielo empíreo, donde fue recibido con pompas divinas por el Padre Eterno y toda la corte celestial. Le fue dado el asiento a la derecha del Altísimo, de donde volverá con toda su gloria y majestad para juzgar a los vivos y a los muertos.
+    </string>
+    <string name="txt_rosary_glorious_2_paragrafh_2">
+        Por este Misterio y por la intercesión de la Santísima Virgen, pidamos la gracia de tener constantemente un ardiente deseo de ir al cielo, con nuestros cuerpos glorificados.
+    </string>
+
+    <string name="txt_rosary_glorious_3_paragrafh_1">
+        El convivio intenso de los discípulos con su Maestro no había sido suficiente para transformarlos, ni siquiera para fortalecerlos. Con la venida del Espíritu Santo, la Iglesia nacida del ministerio Pascual de Cristo, adquirió vigor y se expandió de manera milagrosa.
+    </string>
+    <string name="txt_rosary_glorious_3_paragrafh_2">
+        Por este Misterio, pidamos a la Santísima Virgen que interceda por nosotros junto a su Divino Esposo, para obtenernos la plenitud de los dones que de tal manera transformaron a los discípulos de Jesús y así podamos cumplir nuestra misión con perfección.
+    </string>
+
+    <string name="txt_rosary_glorious_4_paragrafh_1">
+        Cumplida su misión en esta tierra, y ardiendo en deseos de unirse a su adorable Hijo en la eternidad, María Santísima adormeció suavemente en el Señor. No fue la muerte vestida de luto y tristeza, sino el amor divino adornado de luz y de alegría quien vino a romper el hilo de tan noble vida. Y sin que su cuerpo virginal sufriese las injurias de la corrupción, también Ella resucitó y fue llevada gloriosamente a los cielos, de donde salió Jesús a recibirla con la bienaventurada compañía de los ángeles y de los santos.
+    </string>
+    <string name="txt_rosary_glorious_4_paragrafh_2">
+        María entra en la mansión celestial, toda hermosa y resplandeciente como la bendita entre todas las mujeres, y llena de gracia, la predilecta de Dios, la Inmaculada, la más bella de todas las creaturas.
+    </string>
+    <string name="txt_rosary_glorious_4_paragrafh_3">
+        Por este Misterio pidamos a la Santísima Virgen una ardorosa y tierna devoción a Ella, nuestra querida y tan buena Madre.
+    </string>
+
+    <string name="txt_rosary_glorious_5_paragrafh_1">
+        Nuestra Señora es glorificada por la Santísima Trinidad en medio del júbilo de toda la corte celestial. El Padre Eterno la coronó, comunicándole la omnipotencia de la súplica; el Hijo, la sabiduría; y el Espíritu Santo el amor.
+    </string>
+    <string name="txt_rosary_glorious_5_paragrafh_2">
+        Premiada con esta triple corona, Nuestra Señora, Soberana y Madre compasiva, comienza a extender sobre nosotros, hijos y vasallos suyos, la inagotable abundancia de sus misericordias.
+    </string>
+    <string name="txt_rosary_glorious_5_paragrafh_3">
+        Por este Misterio y la intercesión de la Santísima Virgen, pidamos la perseverancia en la gracia y la corona de la gloria.
+    </string>
+
+    <string name="txt_rosary_luminous_1_paragrafh_1">
+        Antes de iniciar su vida pública, Jesús, la Inocencia Encarnada, se hizo bautizar asumiendo sobre sí nuestras debilidades, maldades y miserias. De esta forma deben comenzar todas las obras de santidad: por una purificación.
+    </string>
+    <string name="txt_rosary_luminous_1_paragrafh_2">
+        Por este Misterio y la intercesión de la Santísima Virgen, pidamos la gracia de que por el bautismo de su Divino Hijo, nos obtenga un corazón limpio y un espíritu nuevo, para realizar con perfección nuestro apostolado junto al prójimo.
+    </string>
+
+    <string name="txt_rosary_luminous_2_paragrafh_1">
+        En realidad, la hora no había llegado aún. Sin embargo, una simple insinuación de la Madre, lleva a Jesús a anticipar sus portentosos milagros.
+    </string>
+    <string name="txt_rosary_luminous_2_paragrafh_2">
+        Permitió la Providencia que sucediese de esa forma, para enseñarnos el maravilloso poder de intercesión de María Santísima junto a su Divino Hijo.
+    </string>
+    <string name="txt_rosary_luminous_2_paragrafh_3">
+        Por este Misterio y la intercesión de la Santísima Virgen, pidamos la gracia de tener una confianza inquebrantable, pura y creciente en la omnipotencia de su súplica.
+    </string>
+
+    <string name="txt_rosary_luminous_3_paragrafh_1">
+        Jesús aguardaba ansioso el momento de iniciar su exhaustiva vida pública, a fin de anunciarnos la Buena Nueva. Y para ello la prisión del Bautista debería ser tomada como una señal.
+    </string>
+    <string name="txt_rosary_luminous_3_paragrafh_2">
+        ¡Con qué júbilo y emoción comenzó Él a afirmar a todos que se habían completado los días, y a anunciar la proximidad del Reino de Dios!
+    </string>
+    <string name="txt_rosary_luminous_3_paragrafh_3">
+        El mismo Jesús nos dejará claras las condiciones para entrar en ese Reino:\nhacerse inocente como niños (Mt. 19, 15),\ndespegarse de todas las creaturas y seguirlo (tal como le aconcejó al joven rico - Mt. 19, 10-21),\nvencer el amor propio cargando su propia cruz (Mt. 10, 38),\noír la palabra de Dios y ponerla en práctica (Mt. 13, 18-23),\ndar preferencia a las cosas del cielo por encima de las materiales (Mt. 13, 44-46);\nen una palabra, en fin, el Divino Maestro quiere de nosotros una verdadera conversión.
+    </string>
+    <string name="txt_rosary_luminous_3_paragrafh_4">
+        Por ello, pidamos en este Misterio, por intercesión de la Santísima Virgen, que nos Obtenga de su Divino Hijo el perdón de todos nuestros pecados, la extirpación de los defectos, caprichos y apegos, además de una total conversión. Que Ella nos transforme de tal forma que nuestro corazón pase a ser semejante al suyo, para así, con perfección, trabajar por la salvación de todos y la expansión del Reino de Cristo.
+    </string>
+
+    <string name="txt_rosary_luminous_4_paragrafh_1">
+        Al transfigurarse delante de los tres Apóstoles, Jesús fortaleció nuestra esperanza sobre la vida eterna, animándonos a soportar bien los sufrimientos y pruebas de esta vida. Cuando nosotros sabemos la gloria que nos aguarda, tenemos más paciencia en medio de las tribulaciones. ¡Con este fulgor será nuestra resurrección en el día del juicio!
+    </string>
+    <string name="txt_rosary_luminous_4_paragrafh_2">
+        Por este Misterio, pidamos la intercesión de la Santísima Virgen para obtener la gracia de nunca perder la convicción de la gloria que está reservada a los que perseveren, a fin de que jamás nos desanimemos a lo largo de nuestra existencia.
+    </string>
+
+    <string name="txt_rosary_luminous_5_paragrafh_1">
+        ¿Qué más podría habernos dado Jesús? Se hizo comida y bebida para que eternamente podamos participar de su propia vida. Descendió desde lo más alto de los cielos, asumiendo la sustancia del pan y del vino para elevarnos al convivio de Dios. Al comulgar, nosotros nos asemejamos a María por algunos momentos, poseyendo el Cuerpo, Sangre, Alma y Divinidad de Jesús en nuestras entrañas.
+    </string>
+    <string name="txt_rosary_luminous_5_paragrafh_2">
+        Por este Misterio, pidamos a Nuestra Señora del Santísimo Sacramento la gracia de crecer ardorosamente en la devoción eucarística, y de jamás perder la oportunidad de comulgar con toda nuestra fe, esperanza y amor.
+    </string>
+
+    <string name="txt_rosary_current_mystery">En el %s contemplamos…</string>
+    <string name="title_rosary_last_part">Ahora contemplamos…</string>
+    <string name="txt_rosary_last_part">La última parte del Rosario</string>
+    <string name="txt_rosary_last_part_1">Honremos a María, Hija bien amada del Padre Eterno.</string>
+    <string name="txt_rosary_last_part_2">Honremos a María, Madre admirable de Dios Hijo.</string>
+    <string name="txt_rosary_last_part_3">Honremos a María, Esposa fidelísima del Espíritu Santo.</string>
+
+    <string name="txt_first">Primer</string>
+    <string name="txt_second">Segundo</string>
+    <string name="txt_third">Tercer</string>
+    <string name="txt_fourth">Cuarto</string>
+    <string name="txt_fifth">Quinto</string>
+
+    <string name="txt_rosary_joyful_mystery_single">Misterio Gozoso</string>
+    <string name="txt_rosary_sorrowful_mystery_single">Misterio Doloroso</string>
+    <string name="txt_rosary_glorious_mystery_single">Misterio Glorioso</string>
+    <string name="txt_rosary_luminous_mystery_single">Misterio Luminoso</string>
+
+    <string name="title_ninth_day_1">Día 1</string>
+    <string name="title_ninth_day_1_with_days">Día 1 (Diciembre 16)</string>
+    <string name="title_ninth_day_1_only_days">(Diciembre 16)</string>
+
+    <string name="title_ninth_day_2">Día 2</string>
+    <string name="title_ninth_day_2_with_days">Día 2 (Diciembre 17)</string>
+    <string name="title_ninth_day_2_only_days">(Diciembre 17)</string>
+
+    <string name="title_ninth_day_3">Día 3</string>
+    <string name="title_ninth_day_3_with_days">Día 3 (Diciembre 18)</string>
+    <string name="title_ninth_day_3_only_days">(Diciembre 18)</string>
+
+    <string name="title_ninth_day_4">Día 4</string>
+    <string name="title_ninth_day_4_with_days">Día 4 (Diciembre 19)</string>
+    <string name="title_ninth_day_4_only_days">(Diciembre 19)</string>
+
+    <string name="title_ninth_day_5">Día 5</string>
+    <string name="title_ninth_day_5_with_days">Día 5 (Diciembre 20)</string>
+    <string name="title_ninth_day_5_only_days">(Diciembre 20)</string>
+
+    <string name="title_ninth_day_6">Día 6</string>
+    <string name="title_ninth_day_6_with_days">Día 6 (Diciembre 21)</string>
+    <string name="title_ninth_day_6_only_days">(Diciembre 21)</string>
+
+    <string name="title_ninth_day_7">Día 7</string>
+    <string name="title_ninth_day_7_with_days">Día 7 (Diciembre 22)</string>
+    <string name="title_ninth_day_7_only_days">(Diciembre 22)</string>
+
+    <string name="title_ninth_day_8">Día 8</string>
+    <string name="title_ninth_day_8_with_days">Día 8 (Diciembre 23)</string>
+    <string name="title_ninth_day_8_only_days">(Diciembre 23)</string>
+
+    <string name="title_ninth_day_9">Día 9</string>
+    <string name="title_ninth_day_9_with_days">Día 9 (Diciembre 24)</string>
+    <string name="title_ninth_day_9_only_days">(Diciembre 24)</string>
+
+    <string name="txt_ninth_choose_day">Escoje un día para empezar</string>
+    <string name="txt_ninth_auto_day">O no selecciones ninguno y deja que seleccionemos el día por tí</string>
+    <string name="txt_ninth_auto_day_alert">(Sólo aplica para los días correspondientes)</string>
+    <string name="txt_ninth_today_not_suitable">No estamos en tiempo de Navidad. Selecciona un día para continuar.</string>
+
+    <string name="title_ninth_offering">Ofrecimiento de la Novena</string>
+    <string name="txt_ninth_offering">(Aquí se hacen los ofrecimientos, peticiones o razones por las que se realiza esta Novena de Aguinaldos)</string>
+
+    <string name="title_consideration">Consideración - %s</string>
+    <string name="title_paragraph">Jornada - %s</string>
+
+    <string name="title_ninth_initial_prayer">Oración Inicial</string>
+    <string name="txt_ninth_initial_prayer_1">
+        Benignísimo Dios de Infinita caridad, que tanto amasteis a los hombres, que les disteis en vuestro hijo la mejor prenda de vuestro amor, para que, hecho hombre en las entrañas de una Virgen, naciese en un pesebre para nuestra salud y remedio; yo, en nombre de todos los mortales, os doy infinitas gracias por tan soberano beneficio.
+    </string>
+    <string name="txt_ninth_initial_prayer_2">
+        En retorno de él os ofrezco la pobreza, humildad y demás virtudes de vuestro hijo humanado, suplicandoos por sus divinos méritos, por las incomodidades en que nació y por las tiernas lágrimas que derramó en el pesebre, que dispongáis nuestros corazones con humildad profunda, con amor encendido, con tal desprecio de todo lo terreno, para que Jesús recién nacido tenga en ellos su cuna y more eternamente.
+    </string>
+
+    <string name="title_ninth_virgin_mary_prayer">Oración a la Santísima Virgen</string>
+    <string name="txt_ninth_virgin_mary_prayer_1">
+        Soberana María que por vuestras grandes virtudes y especialmente por vuestra humildad, merecisteis que todo un Dios os escogiese por madre suya, os suplico que vos misma preparéis y dispongáis mi alma y la de todos los que en este tiempo hiciesen esta novena, para el nacimiento espiritual de vuestro adorado hijo.
+    </string>
+    <string name="txt_ninth_virgin_mary_prayer_2">
+        ¡Oh dulcísima madre! comunicadme algo del profundo recogimiento y divina ternura con que lo aguardasteis vos, para que nos hagáis menos indignos de verle, amarle y adorarle por toda la eternidad.
+    </string>
+
+    <string name="title_ninth_saint_joseph_prayer">Oración a San José</string>
+    <string name="txt_ninth_saint_joseph_prayer_1">
+        ¡Oh Santísimo José, esposo de María y padre adoptivo de Jesús!, infinitas gracias doy a Dios porque os escogió para tan altos ministerios y os adornó con todos los dones proporcionados a tan excelente grandeza.
+    </string>
+    <string name="txt_ninth_saint_joseph_prayer_2">
+        Os ruego, por el amor que tuvisteis al divino Niño, me abraséis en fervorosos deseos de verle y recibirle sacramentalmente, mientras en su divina esencia le veo y le gozo en el cielo.
+    </string>
+
+    <string name="title_ninth_child_jesus_prayer">Oración al Niño Jesús</string>
+    <string name="txt_ninth_child_jesus_prayer_1">
+        Acordaos, ¡oh dulcísimo Niño Jesús! que dijiste a la venerable Margarita del Santísimo Sacramento, y en persona suya a todos vuestros devotos, estas palabras tan consoladoras para esta pobre humanidad agobiada y doliente: \"Todo lo que quieras pedir, pídelo por los méritos de mi infancia, y nada te será negado\".
+    </string>
+    <string name="txt_ninth_child_jesus_prayer_pause">
+        (Breve pausa de silencio para realizar peticiones personales)
+    </string>
+    <string name="txt_ninth_child_jesus_prayer_2">
+        Llenos de confianza en Vos, oh Jesús, que sois la misma verdad, venimos a exponeros toda nuestra miseria. Ayudadnos a llevar una vida santa, para conseguir una eternidad bienaventurada. Concedednos por los méritos infinitos de vuestra encarnación y de vuestra infancia la gracia de la cual necesitamos tanto. Nos entregamos a Vos, oh Niño omnipotente, seguros de que no quedará frustrada nuestra esperanza, y de que en virtud de vuestra divina promesa, acogeréis y despacharéis favorablemente nuestra súplica.
+    </string>
+
+    <string name="txt_ninth_1_consideration_1">
+        En el principio de los tiempos, el Verbo reposaba en el seno de su Padre en lo más alto de los cielos; allí era la causa, a la par que el modelo de toda creación. En esas profundidades de una incalculable eternidad permanecía el Niño de Belén antes de que se dignara bajar a la tierra y tomara visiblemente posesión de la gruta de Belén. Allí es donde debemos buscar sus principios que jamás han comenzado; de allí debemos datar la genealogía de lo eterno, que no tiene antepasados, y contemplar la vida de complacencia infinita que allí llevaba.
+    </string>
+    <string name="txt_ninth_1_consideration_2">
+        La vida del Verbo Eterno en el seno de su Padre era una vida maravillosa; y, sin embargo, ¡misterio sublime! busca otra morada, una mansión creada. No era porque en su mansión eterna faltase algo a su infinita felicidad, sino porque su misericordia infinita anhelaba la redención y la salvación del género humano, que sin Él no podría verificarse. El pecado de Adán había ofendido a Dios y esa ofensa infinita no podría ser condonada sino por los méritos del mismo Dios. La raza de Adán había desobedecido y merecido un castigo eterno; era pues necesario, para salvarla y satisfacer su culpa, que Dios, sin dejar el cielo, tomase la forma del hombre sobre la tierra y con la obediencia a los designios de su Padre, expiase aquella desobediencia, ingratitud y rebeldía. Era necesario, en las miras de su amor, que tomase la forma, las debilidades e ignorancias inconscientes de la infancia para expiar las debilidades e ignorancias sistemáticas del hombre; que creciese para darle crecimiento espiritual; que sufriese, para enseñarle a morir a sus pasiones y a su orgullo y por eso el Verbo Eterno, ardiendo en deseos de salvar al hombre, resolvió hacerse hombre también y así redimir al culpable.
+    </string>
+
+    <string name="txt_ninth_1_paragraph_1">
+        Esta es la primera jornada, y es en el Monte Tabor, donde obró el Divino Niño el misterio de la Transfiguración en su crecida edad, manifestando su gloria a los tres discípulos. Donde contemplarás la humildad y pobreza con que emprendió su viaje nuestra purísima Reina, y no llevando otra cosa que un poco de pan y fruta para tan dilatadas jornadas, caminando por aquellos montones de nieve, en un pobre y humilde jumento. Y al Santísimo Esposo hecho paje de estribo de la Reina Madre, llevando en sus hombros el fardito de ropa, y ajuar del Divino Niño, guiando el jumento por las veredas más suaves. Contempla también como, llegando a aquel alto monte, le formó el Santo José entre las ramas un pabellón con su humilde capa, para resistir los aires fríos del riguroso invierno. Mira, también, al Divino Niño, en aquel virginal lecho, donde teniendo muy presente el misterio de la Transfiguración, miraba los pocos que le habían de seguir por las sendas del camino de la cruz, para llegar a la posada eterna de la gloria; los muchos que habían de perderse en la peregrinación y viaje a la eternidad, por el camino ancho de la perdición; y mira qué camino llevas para llegar al alto monte de la gloria; y pídeles a nuestros peregrinos sagrados que te admitan en su compañía, para llegar con seguridad al Belén de la gloria.
+    </string>
+
+    <string name="txt_ninth_2_consideration_1">
+        El Verbo Eterno se halla a punto de tomar su naturaleza creada en la casa de Nazaret, en donde moraban María y José. Cuando la sombra del decreto divino vino a deslizarse sobre ella, María estaba sola y ensimismada en la oración. Pasaba las silenciosas horas de la noche en la unión más estrecha con Dios; y mientras oraba, el Verbo tomó posesión de su morada creada. Sin embargo, no llegó inopinadamente: antes de presentarse envió un mensajero, que fue el Arcángel San Gabriel, para pedir a María de parte de Dios su consentimiento para la encarnación. El creador no quiso efectuar ese gran misterio sin la aquiescencia de su criatura.
+    </string>
+    <string name="txt_ninth_2_consideration_2">
+        Aquel momento fue muy solemne: era potestativo en María el rehusar… con qué adorables delicias, con qué inefable complacencia aguardaría la Santísima Trinidad a que María abriese los labios y pronunciase el \"fiat voluntas tua\" (Hágase tu voluntad) que debió ser suave melodía para sus oídos, y con el cual se conformaba su profunda humildad a la omnipotente voluntad divina.
+    </string>
+    <string name="txt_ninth_2_consideration_3">
+        La Virgen inmaculada ha dado su asentimiento. El arcángel ha desaparecido. Dios se ha revestido de una naturaleza creada; la voluntad eterna está cumplida y la creación completa. En las regiones del mundo angélico estallaba un júbilo inmenso, pero la Virgen María ni le oía ni le hubiera prestado atención a él. Tenía inclinada la cabeza y su alma estaba sumida en un silencio que se asemejaba al de Dios. El Verbo se había hecho carne y, aunque todavía invisible para el mundo, habitaba ya entre los hombres que su inmenso amor había venido a rescatar. No era ya el Verbo Eterno; era el Niño Jesús, revestido de la apariencia humana, y justificando ya el elogio que de Él han hecho todas las generaciones en llamarle el más hermoso de los hijos de los hombres.
+    </string>
+
+    <string name="txt_ninth_2_paragraph_1">
+        Esta es la segunda jornada, y es la ciudad de Naín, donde resucitó el Niño Dios al hijo de la viuda, en su crecida edad. Contempla en esta jornada los trabajos de nuestra Reina y Señora experimentando las lluvias del cielo, los aires fríos, las penalidades del camino, a su santo esposo caminando a pie, y apartando el jumento de las veredas ásperas, limpiando los caminos pedregosos, cansado, hasta llegar a la ciudad. Donde puedes considerar en este Patriarca Santo, la vergüenza que pasaría en las puertas de los mesones, buscando posada para su fatigada esposa, las palabras ásperas y desabridas con que le despedían los mesoneros como gente interesada, el desconsuelo con que se quedaría en el rincón del portal, aumentando la pena de ambos esposos, el ver a Dios a las puertas de un mesón, sin dar entrada a la misma luz: y mira tú cuántas veces has hecho lo mismo, despidiendo a Dios de tu corazón con el pecado, por tener tu alma hecha un mesón público de los demonios. Abre en este día las puertas de tu corazón, y oye qué te dice el vientre de su madre: mira alma mía, en cuya busca vengo para llevarte a mi gloria, que estoy llamando a las puertas de tu corazón, ábreme que no tengo dónde reclinar la cabeza.
+    </string>
+
+    <string name="txt_ninth_3_consideration_1">
+        Así había comenzado su vida encarnada el Niño Jesús. Consideremos el alma gloriosa y el santo cuerpo que había tomado, adorándolos profundamente. Admirando en el primer lugar el alma de ese divino Niño, consideremos en ella la plenitud de su gracia santificadora; la de su ciencia beatífica, por la cual desde el primer momento de su vida vio la divina esencia más claramente que todos los ángeles y leyó lo pasado y lo porvenir con todos sus arcanos conocimientos. No supo nunca por adquisición voluntaria nada que no supiese por infusión desde el primer momento de su ser; pero él adoptó todas las enfermedades de nuestra naturaleza a que dignamente podía someterse, aun cuando no fuesen necesarias para la grande obra que debía cumplir. Pidámosle que sus divinas facultades suplan la debilidad de las nuestras y les den nueva energía; que su memoria nos enseñe a recordar sus beneficios, su entendimiento a pensar en Él, su voluntad a no hacer sino lo que Él quiere y en servicio suyo.
+    </string>
+    <string name="txt_ninth_3_consideration_2">
+        Del alma del Niño Jesús pasemos ahora a su cuerpo, que era un mundo de maravillas, una obra maestra de la mano de Dios. No era, como el nuestro, una traba para el alma: era, por el contrario, un nuevo elemento de santidad. Quiso que fuese pequeño y débil como el de todos los niños, y sujeto a todas las incomodidades de la infancia, para asemejarse más a nosotros y participar de nuestras humillaciones. El Espíritu Santo formó ese cuerpecillo divino con tal delicadeza y tal capacidad de sentir, que pudiese sufrir hasta el exceso para cumplir la grande obra de nuestra redención. La belleza de ese cuerpo del divino Niño fue superior a cuanto se ha imaginado jamás; la divina sangre que por sus venas empezó a circular desde el momento de la encarnación es la que lava todas las manchas del mundo culpable. Pidámosle que lave las nuestras en el sacramento de la penitencia, para que el día de su Navidad nos encuentre purificados, perdonados y dispuestos a recibirle con amor y provecho espiritual.
+    </string>
+
+    <string name="txt_ninth_3_paragraph_1">
+        La tercera jornada de nuestra purísima Reina, desde la ciudad de Naín hasta los campos de Samaría, donde le salieron al Niño Dios en su crecida edad, aquellos diez leprosos. Considera, cómo siendo mucha la gente que cruzaba aquel camino, para cumplir con el edicto del César, al ver a nuestros sagrados peregrinos en tal suma pobreza, unos los atropellaban, otros los apartaban como a gente humilde y despreciable, y de esta suerte, míralos llegar a los campos de Samaría, y sin tener dónde alojarse, y qué sentiría el Santo Patriarca alojándose en aquel despoblado campo, todo sembrado de nieve, sin poder aliviar la pena que padecería con los aires fríos la más tierna y delicada niña, y qué padecería el Divino Niño en sus entrañas, cuando vio así tratada a su Santísima Madre; y mira cuántas veces atropellas al Niño Dios traspasando su Santa Ley, apartándole de tu corazón y de tu alma, por hacer tu gusto y voluntad; y procura en esta posada salir al encuentro del Divino Niño, para que te sane como a los leprosos manifestándole tus llagas, pues no viene a otra cosa que a curar la lepra de todo el linaje humano.
+    </string>
+
+    <string name="txt_ninth_4_consideration_1">
+        Desde el seno de su madre comenzó el Niño Jesús a poner en práctica su entera sumisión a Dios, que continuó sin la menor interrupción durante toda su vida. Adoraba a su Eterno Padre, le amaba, se sometía a su voluntad; aceptaba con resignación el estado en que se hallaba conociendo toda su debilidad, toda su humillación, todas sus incomodidades. ¿Quién de nosotros quisiera retroceder a un estado semejante con el pleno goce de la razón y de la reflexión?, ¿Quién pudiera sostener a sabiendas un martirio tan prolongado, tan penoso de todas maneras? Por ahí entró el Divino Niño en su dolorosa y humilde carrera; así empezó a anonadarse delante de su Padre, a enseñarnos lo que Dios merece por parte de su criatura, a expiar nuestro orgullo, origen de todos nuestros pecados y hacernos sentir toda la criminalidad y desórdenes del orgullo.
+    </string>
+    <string name="txt_ninth_4_consideration_2">
+        Deseamos hacer una verdadera oración; empecemos por formarnos de ella una exacta idea contemplando al Niño en el seno de su madre. El divino Niño ora y ora del modo más excelente. No habla, no medita ni se deshace en tiernos afectos. Su mismo estado, aceptado con la intención de honrar a Dios, es su oración y ese estado expresa altamente todo lo que Dios merece y de qué modo quiere ser adorado de nosotros.
+    </string>
+    <string name="txt_ninth_4_consideration_3">
+        Unámonos a las oraciones del Niño Dios en el seno de María; unámonos al profundo abatimiento y sea este el primer efecto de nuestro sacrificio a Dios. Démonos a Dios no para ser algo como lo pretende continuamente nuestra vanidad sino para ser nada, para quedar enteramente consumidos y anonadados, para renunciar a la estimación de nosotros mismos, a todo cuidado de nuestra grandeza, aunque sea espiritual, a todo movimiento de vanagloria. Desaparezcamos a nuestros propios ojos y que Dios sólo sea todo para nosotros.
+    </string>
+
+    <string name="txt_ninth_4_paragraph_1">
+        Esta es la cuarta jornada, y el pozo de Siquén, donde se contemplan los nuevos trabajos de nuestra Reina y Señora caminando unos ratos a pie y otros en el jumentillo y el Santo José tirando de la bestezuela, los pies descalzos y ampollados; donde habiendo llegado puedes considerar este día cómo teniendo a la vista aquella fuente de agua nuestra soberana Reina, viendo que se acercaba su dichoso parto, la devoción con que desenvolviendo el fardito de ajuar del Divino Niño, hincada de rodillas, lava la camisita y los pañitos en que había de envolver aquel rico tesoro de los cielos. Mira y contempla aquel fuego de amor en que se abrazaba su corazón, con los deseos de ver entre sus brazos a aquel Verbo hecho carne, para nuestro remedio.
+    </string>
+
+    <string name="txt_ninth_5_consideration_1">
+        Ya hemos visto la vida que llevaba el Niño Jesús en el seno de su purísima Madre; veamos hoy la vida que llevaba también María durante el mismo espacio de tiempo. Necesidad hay de que nos detengamos en ella si queremos comprender, en cuanto es posible a nuestra limitada capacidad, los sublimes misterios de la encarnación y el modo como hemos de corresponder a ellos.
+    </string>
+    <string name="txt_ninth_5_consideration_2">
+        María no cesaba de aspirar por el momento en que gozaría de esa visión beatífica terrestre: la faz de Dios encarnado. Estaba a punto de ver aquella faz humana que debía iluminar el cielo durante toda la eternidad. Iba a leer el amor filial en aquellos mismos ojos cuyos rayos deberían esparcir para siempre la felicidad en millones de elegidos. Iba a ver aquel rostro todos los días, a todas horas, cada instante, durante muchos años. Iba a verle en la ignorancia aparente de la infancia, en los encantos particulares de la juventud y en la serenidad reflexiva de la edad madura… Haría todo lo que quisiese de aquella faz divina; podría estrecharla contra la suya con toda la libertad del amor materno; cubrir de besos los labios que deberían pronunciar la sentencia a todos los hombres; contemplarla a su gusto durante su sueño o despierto, hasta que la hubiese aprendido de memoria… ¡Cuán ardientemente deseaba ese día!
+    </string>
+    <string name="txt_ninth_5_consideration_3">
+        Tal era la vida de expectativa de María… era inaudita en sí misma, mas no por eso dejaba de ser el tipo magnífico de toda vida cristiana, no nos contentemos con admirar a Jesús residiendo en María, sino pensemos que en nosotros también reside por esencia, potencia y presencia.
+    </string>
+    <string name="txt_ninth_5_consideration_4">
+        Sí, Jesús nace continuamente en nosotros y de nosotros, por las buenas obras que nos hace capaces de cumplir, y por nuestra cooperación a la gracia; por manera que el alma del que se halla en gracia es un seno perpetuo de María, un Belén interior sin fin. Después de la comunión Jesús habita en nosotros, durante algunos instantes, real y sustancialmente como Dios y como hombre, porque el mismo niño que estaba en María está también en el Santísimo Sacramento. ¿Qué es todo esto sino una participación de la vida de María durante esos maravillosos meses, y una expectativa llena de delicias como la suya?
+    </string>
+
+    <string name="txt_ninth_5_paragraph_1">
+        Camina, alma mía, en compañía de nuestros sagrados peregrinos sin perderlos de vista, y contempla en esta quinta jornada qué hizo nuestra purísima Reina desde el pozo de Siquén hasta el llamado Necmas; contempla lo que dice la venerable Madre, María de Jesús de Ágreda; que muchas veces se hospedaba la Santísima Virgen entre los corrales de las ovejas, porque no le daban otro mejor lugar los hombres; pues considera este día que, no hallando en este corto lugar posada, se retira a la montaña, entrando por las puertas de la cabaña, se levantan alegres los corderillos y las ovejas, y con sus balidos le ofrecen aquel humilde lugar, retirándose, como dice la venerable Madre, a un rincón, reconociendo a su Señor y Creador. Considera, pues, la humildad de la Santísima Virgen y Reina de los ángeles, mírala apearse del jumentillo, acogerse entre los espinos; y contempla cuáles serían los pensamientos de aquel divino Pastor en las entrañas de su Madre, que vino a buscar la perdida oveja, qué lágrimas derramaría por las veces que se le había de tener entre las espinas de los pecados.
+    </string>
+
+    <string name="txt_ninth_6_consideration_1">
+        Jesús había sido concebido en Nazaret, domicilio de San José y de María, y allí era de creerse que había de nacer, según todas las probabilidades. Mas Dios lo tenía dispuesto de otra manera y los profetas habían anunciado que el Mesías nacería en Belén de Judá, ciudad de David. Para que se cumpliese esa predicción, Dios se sirvió de un medio que no parecía tener ninguna relación con este objeto, a saber: la orden dada por el emperador Augusto de que todos los súbditos del Imperio Romano se empadronasen en el lugar de donde eran originarios. María y José, como descendientes que eran de David, no estaban dispensados de ir a Belén, y ni la situación de la Virgen Santísima, ni la necesidad en que estaba José de trabajo diario que les asegurara la subsistencia, pudo eximirles de este largo y penoso viaje, la estación más rigurosa e incómoda del año.
+    </string>
+    <string name="txt_ninth_6_consideration_2">
+        No ignoraba Jesús en qué lugar debía nacer, e inspira a sus padres que se entreguen a la Providencia, y que de esta manera concurran inconscientemente a la ejecución de sus designios. Almas interiores, observad este manejo del divino Niño, porque es el más importante de la vida espiritual: aprended que quien se haya entregado a Dios ya no ha de pertenecerse a sí mismo, ni ha de querer en cada instante sino lo que Dios quiera para él; siguiéndole ciegamente aún en las cosas exteriores, tales como el cambio de lugar donde quiera que le plazca conducirle. Ocasión tendréis de observar esta dependencia y esta fidelidad inviolable en toda la vida de Jesucristo, y este es el punto sobre el cual se han esmerado en imitarle los santos y las almas verdaderamente interiores (que tienen un gran trato con Dios), renunciando absolutamente a su propia voluntad.
+    </string>
+
+    <string name="txt_ninth_6_paragraph_1">
+        Contempla la sexta jornada que hicieron estos príncipes soberanos hasta llegar al lugar donde perdieron al Divino Niño Jesús, a los doce años de edad, donde podrás considerar los trabajos que padecería esta tierna y delicada niña en aquella doblada tierra, ya subiendo los montes altos, cubiertos de nieve, ya pasando la serranía, hasta llegar a aquel despoblado sitio, donde viéndole el Santo Patriarca atormentada por las inclemencias del tiempo, le rogó tomarse algún descanso y refresco para proseguir la jornada, y mientras el santo esposo buscaba alguna sombra para ella, que a todos hace sombra con su intercesión, contempla el dolor que padecería en Niño Dios en sus entrañas, teniendo muy presente lo que había de padecer su santísima Madre, perdiéndole en aquel sitio, y el poco sentimiento que habían de tener los hombres perdiendo a Dios, su amistad, gracia y amor.
+    </string>
+
+    <string name="txt_ninth_7_consideration_1">
+        Representémonos el viaje de María y José hacia Belén, llevando consigo al Creador del universo aún no nacido hecho hombre. Contemplemos la humanidad y la obediencia de este divino Niño que, aunque de raza judía y habiendo amado durante siglos a su pueblo con una predilección inexplicable, obedece así a un príncipe extranjero que forma el censo de población de su provincia, como si hubiese para Él en esa circunstancia algo que le halagase, y quisiese apresurarse a aprovechar la ocasión de hacerse empadronar oficial y auténticamente como súbdito en el momento en que venía al mundo. ¿No es extraño que la humillación, que causa tan invencible repugnancia a la criatura, parezca ser la única cosa creada que tenga atractivos para el Creador? ¿No nos enseñará la humildad de Jesús a amar esa hermosa virtud?
+    </string>
+    <string name="txt_ninth_7_consideration_2">
+        ¡Ah!… que llegue el momento en que aparezca el deseado de las naciones, porque todo clama por este feliz acontecimiento. El mundo, sumido en la oscuridad y el malestar, buscando y no encontrando el alivio de sus males, suspira por su Libertador. El anhelo de José, la expectativa de María, son cosas que no puede expresar el lenguaje humano. El Padre Eterno se halla, si nos es lícito emplear esta expresión, adorablemente impaciente por dar a su Hijo único al mundo, y verle ocupar su puesto entre las criaturas visibles. El Espíritu Santo arde en deseos de presentar a la luz del día esta santa humanidad tan bella que Él mismo ha formado con tal especial y divino esmero. En cuanto al divino Niño, objeto de tantos anhelos, recordemos que hacia nosotros avanza al mismo ritmo que lo hicieron hacia Belén. Apresuremos con nuestro deseo el momento de su llegada; purifiquemos nuestras almas para que sean su mística morada, y nuestros corazones para que sean su mansión terrenal; que nuestros actos de mortificación y desprendimiento \"preparen los caminos del Señor y hagan rectos sus senderos\".    </string>
+    <string name="txt_ninth_7_paragraph_1">
+        Esta es la séptima jornada y es la ciudad santa de Jerusalén, donde se contempla la inmensidad de penas que padecería nuestra Reina y Señora, cuando pasando por aquellas calles, contemplaba, como quien sabía lo mucho que en aquella ingrata ciudad había de padecer su Divino Jesús, las penosas jornadas que había de hacer de Tribunal en Tribunal, y en las posadas tan malas que había de hallar, y en aquellos Pretorios y Tribunales, consideración que le sacaba las lágrimas a los ojos. Contempla el tormento que el Niño Dios padecería en sus entrañas; allí, diría, me darán la bofetada, y en aquella casa abrirán un calabozo para ponerme aprisionado; en aquel palacio se abrirán las puertas para atormentarme con más de cinco mil azotes; y en aquel Tribunal me tratarán como a loco y simple. Con esta consideración llegarían al Monte Calvario.
+    </string>
+
+    <string name="txt_ninth_8_consideration_1">
+        Llegan a Belén José y María, buscando hospedaje en los mesones; pero no lo encuentran, ya por hallarse todo ocupado, ya porque fueron desechados a causa de su pobreza. Pero nada puede turbar la paz interior de los que están fijos en Dios. Sí, José experimentaba tristeza cuando era rechazado de casa en casa, porque pensaba en María y en el Niño, pero sonreía también con tanta tranquilidad cuando fijaba sus miradas en su casta esposa. El niño aún no nacido se regocijaba de aquellas negativas, que eran el preludio de sus humillaciones venideras. Cada voz áspera, el ruido de cada puerta que se cerraba ante ellos era una dulce melodía para sus oídos. Eso era lo que había venido a buscar. El deseo de esas humillaciones era lo que había contribuido a hacerle tomar la forma humana.
+    </string>
+    <string name="txt_ninth_8_consideration_2">
+        ¡Oh divino Niño de Belén! Esos días que tantos han pasado en fiestas y diversiones o descansando tranquilamente en cómodas y ricas mansiones, han sido para vuestros padres un día de fatiga y vejaciones de toda clase. ¡Ay!, el espíritu de Belén es el de un mundo que ha olvidado a Dios… ¡Cuántas veces no ha sido también el nuestro! ¿No cerramos continuamente con ruda ignorancia la puerta a los llamamientos de Dios, que nos solicita a convertirnos, a santificarnos o a conformarnos con su voluntad? ¿No hacemos mal uso de nuestras penas, desconociendo su carácter celestial con que cada uno a su modo lo lleva grabado en sí mismo? Dios viene a nosotros muchas veces en la vida, pero no conocemos su faz. No le reconocemos hasta que nos vuelve la espalda y se aleja después de nuestra negativa.
+    </string>
+    <string name="txt_ninth_8_consideration_3">
+        Se pone el sol del 24 de diciembre detrás de los tejados de Belén y sus últimos rayos alumbran las cimas de las rocas escarpadas que le rodean. Hombres groseros codean rudamente al Señor en las calles de aquella aldea oriental, y cierran sus puertas al ver a su madre. La bóveda de los cielos aparece purpurina por encima de aquellas colinas frecuentadas por los pastores. Las estrellas van apareciendo unas tras otras. Algunas horas más y aparecerá el Verbo Eterno.
+    </string>
+
+    <string name="txt_ninth_8_paragraph_1">
+        Contempla la octava jornada desde Jerusalén hasta llegar a Belén, donde habiendo llegado nuestros peregrinos sagrados a las cuatro de la tarde, cuando pensaba el Santo Patriarca hallar segura posada para la Madre de Dios, entre sus deudos, parientes y conocidos, poniendo fin y término a sus trabajos; entonces se le multiplicaron sus penas, porque habiendo cumplido con el edicto del César, llegaron a las puertas de los parientes a buscar posada y todos les dieron con ella en la cara. Considera el sentimiento grande que padecería su atribulado corazón en aquellas calles buscando en las puertas de los mesones un portal o pajar para la Emperatriz de los cielos. La mortificación que padecería con las palabras ásperas y desabridas con que los despedían, tratando al santo esposo de ocioso y vagabundo, al verla con tanta humildad y pobreza: ¡qué lágrimas no derramarían sus ojos! Y más cuando habiendo entrado la noche y desgajándose la nieve, corriendo los aires fríos y no teniendo donde cerrar los ojos, miraba a su santísima esposa desamparada y llorosa con el desprecio de los hombres. Considera también, qué sentiría el Divino Niño al ver a su Madre, traspasada con tan sangriento cuchillo de dolor, ¡qué lágrimas derramaría en sus entrañas, al ver sus amorosos llamamientos despreciados! La sordera voluntaria de los hombres, el recibimiento que le hizo el mundo. Y después de haber trasegado todos los mesones y casas de los poderosos sin hallar un portal para su descanso; míralos salir a las nueve de la noche, tristes, llorosos, afligidos y desamparados a buscar entre los irracionales la piedad que los hombres les negaron.
+    </string>
+    <string name="txt_ninth_8_paragraph_2">
+        ¿Qué haces, alma mía, que no se abren las puertas de tu corazón de dolor, para dar posada a la Santísima Virgen María y al Niño Dios? Procura salir al encuentro de Ellos y llevar al Divino Niño a tu alma, recibiéndole sacramentado este día, para que al final de tu jornada te abra las puertas de su gloria.
+    </string>
+
+    <string name="txt_ninth_9_consideration_1">
+        La noche ha caído del todo en las campiñas de Belén. Desechados por los hombres y viéndose sin abrigo, María y José han salido de la inhospitalaria población y se han refugiado en una gruta que se encontraba al pie de la colina. Seguía a la Reina de los ángeles el jumento que le había servido de humilde cabalgadura durante el viaje, y en aquella cueva hallaron un manso buey, dejado allí probablemente por alguno de los caminantes que habían ido a buscar hospedaje en la ciudad. El Divino Niño, desconocido por sus criaturas racionales, va a tener que acudir a las irracionales para que calienten con su tibio aliento la atmósfera helada de esa noche de invierno, y le manifiesten con esto y con su humilde actitud el respeto y adoración que le había negado Belén. La rojiza linterna que José tiene en la mano ilumina tenuemente ese precario recinto, ese pesebre lleno de paja, que es figura profética de las maravillas del altar, y de la íntima y prodigiosa unión eucarística que Jesús ha de contraer con los hombres. María está en oración en medio de la gruta, y así van pasando silenciosamente las horas de esa noche llena de misterio.
+    </string>
+    <string name="txt_ninth_9_consideration_2">
+        Pero ha llegado la medianoche, y de repente vemos dentro de ese pesebre, poco antes vacío, al divino Niño esperado, vaticinado, deseado durante cuatro mil años con tan inefable anhelo. A sus pies se postra su Santísima Madre, en los transportes de una adoración de la cual nada puede dar idea. José también se acerca y le rinde el homenaje con que inaugura su misterioso e imponderable oficio de padre adoptivo del Redentor de los hombres. La multitud de ángeles que desciende del cielo a contemplar esa maravilla sin par, dejan estallar su alegría y hacen vibrar en los aires las armonías de ese \'Gloria in excelsis\', que es el eco de la adoración que se produce en torno al Altísimo hecha perceptible por un instante a los oídos de la pobre tierra. Convocados por ellos, vienen en tropel los pastores de la comarca a adorar al recién nacido y presentarle sus humildes ofrendas. Ya brilla en oriente la misteriosa estrella de Jacob, y ya se pone en marcha hacia Belén la caravana espléndida de los Reyes Magos, que dentro de pocos días vendrán a depositar a los pies del divino Niño el oro, el incienso y la mirra, que son símbolos de la caridad, de la adoración y de la mortificación.
+    </string>
+    <string name="txt_ninth_9_consideration_3">
+        ¡Oh adorado Niño! nosotros también, quienes hemos hecho esta novena para prepararnos al día de vuestra Navidad, queremos ofreceros nuestra pobre adoración: ¡no la rechacéis! Venid a nuestras almas, venid a nuestros corazones llenos de amor. Encended en ellos la devoción a vuestra santa infancia, no intermitente y sólo circunscrita al tiempo de vuestra Navidad, sino siempre y en todos los tiempos; devoción que fielmente practicada y celosamente propagada, nos conduzca a la vida eterna, librándonos del pecado y sembrando en nosotros todas las virtudes cristianas.
+    </string>
+
+    <string name="txt_ninth_9_paragraph_1">
+        Hemos llegado, alma mía, a la última posada y palacio que le previno el Eterno Padre a su Unigénito para su nacimiento y es una humilde cueva y pesebre de animales, donde puedes considerar, cómo habiendo llegado los dos peregrinos sagrados, dan gracias al Eterno Padre por aquel humilde y despreciado hospicio; después lo barren y lo asean, y a su imitación los ángeles que de guardia asistían a nuestra Reina y Señora; mira y contempla cómo el santo esposo desdoblaba el fardo, y de la humilde ropa forma el pesebre que sirvió de lecho al parto de la Reina Madre, una cama para su descanso y, habiendo hecho lumbre con los instrumentos que llevaba, se retira a un rincón del portal, y llegada la medianoche, sintiendo nuestra gran Reina y Señora se llegaba la hora de su dichoso parto, hincada de rodillas, puestas las manos en el pecho, los ojos levantados al cielo, elevadas las potencias y sentidos, y toda divinizada, dio al mundo al Unigénito del Eterno Padre y suyo, Cristo Jesús, Dios y hombre verdadero, a quien en brazos de San Miguel adoró, y recibiéndolo con profunda humildad y reverencia en sus santísimos brazos, le adoraron los santos ángeles (como en el altar sagrado) como a su verdadero Dios, Señor y Creador. Contempla el gozo del Señor San José cuando despertando de aquel dulce sueño (en el que estaba mirando tan soberano misterio) vio en brazos de la Aurora al divino sol de justicia desterrando las sombras de la noche, con su inaccesible luz, alegrando al mundo con su venida; y aquella humilde cueva hecha un abreviado cielo, y viéndole tiritar de frío y hacer pucheros a su Santísima Madre, quien le envuelve en aquellos humildes pañales, le abriga entre sus pechos, le da de su dulce néctar y le pone entre la paja y el heno, donde le adoran los animales como a su Hacedor y Señor.
+    </string>
+    <string name="txt_ninth_9_paragraph_2">
+        Y con la noticia que tuvieron los pastores por un ángel, con júbilo y alegría, vienen en busca de luz, entran en la cueva, y dándole las felicitaciones a la Santísima Madre, reciben al Niño en los brazos con singular regocijo y alegría de ver a Dios hecho niño tierno en un establo, ceñidos los brazos, envuelto en mantillas, y al León de Judá hecho cordero humilde en una cueva.
+    </string>
+
+    <string name="title_ninth_joys">Aspiraciones para la llegada del Niño Dios</string>
+
+    <string name="txt_ninth_joy_begin">
+        Dulce Jesús mío,\nmi Niño adorado.
+    </string>
+    <string name="txt_ninth_joy_end">
+        ¡Ven Salvador nuestro,\npor quien suspiramos!
+    </string>
+    <string name="txt_ninth_joy_answer">
+        ¡Ven a nuestras almas!\n¡Ven no tardes tanto!
+    </string>
+    <string name="txt_ninth_joy_1">
+        ¡Oh! Sapiencia suma\ndel Dios soberano,\nque a infantil alcance\n¡te rebajas sacro!\n¡oh Niño Divino,\nven para enseñarnos\nla prudencia que hace\nverdaderos sabios!
+    </string>
+    <string name="txt_ninth_joy_2">
+        ¡Oh, Adonai potente\nque a Moisés hablando,\nde Israel al pueblo\ndiste los mandatos!\n¡Ah, ven prontamente\npara rescatarnos,\ny que un niño débil\nmuestre fuerte brazo!
+    </string>
+    <string name="txt_ninth_joy_3">
+        ¡Oh raíz sagrada\nde Jesé que en lo alto\npresentas al orbe\ntu fragante nardo!\nDulcísimo Niño\nque has sido llamado\nlirio de los valles,\nbella flor del campo.
+    </string>
+    <string name="txt_ninth_joy_4">
+        ¡Llave de David\nque abre al desterrado\nlas cerradas puertas\ndel regio palacio!\n¡Sácanos, oh Niño,\ncon tu blanca mano,\nde la cárcel triste\nque labró el pecado!
+    </string>
+    <string name="txt_ninth_joy_5">
+        ¡Oh lumbre de Oriente,\nsol de eternos rayos,\nque entre las tinieblas\ntu esplendor veamos!\n¡Niño tan precioso,\ndicha del cristiano,\nluzca la sonrisa\nde tus dulces labios!
+    </string>
+    <string name="txt_ninth_joy_6">
+        ¡Espejo sin mancha,\nSanto de los santos,\nsin igual imagen\ndel Dios soberano!\n¡Borra nuestras culpas,\nsalva al desterrado\ny, en forma de niño,\nda al mísero amparo!
+    </string>
+    <string name="txt_ninth_joy_7">
+        ¡Rey de las naciones,\nEmanuel preclaro,\nde Israel anhelo\nPastor del rebaño!\n¡Niño que apacientas\ncon suave cayado\nya la oveja arisca,\nya el cordero manso!
+    </string>
+    <string name="txt_ninth_joy_8">
+        ¡Ábranse los cielos\ny llueva de lo alto\nbienhechor rocío\ncomo riego santo!\n¡Ven hermoso niño,\nVen Dios humanado!\n¡Luce Dios estrella,\nbrota, flor del campo!
+    </string>
+    <string name="txt_ninth_joy_9">
+        ¡Ven, que ya María\npreviene sus brazos,\ndo su niño vean,\nen tiempo cercano!\n¡Ven, que ya José,\ncon anhelo sacro,\nse dispone a hacerse\nde tu amor sagrario!
+    </string>
+    <string name="txt_ninth_joy_10">
+        ¡Del débil auxilio,\ndel doliente amparo,\nconsuelo del triste,\nluz del desterrado!\n¡Vida de mi vida,\nmi Dueño adorado,\nmi constante amigo,\nmi divino hermano
+    </string>
+    <string name="txt_ninth_joy_11">
+        ¡Ve ante mis ojos,\nde tí enamorados!\n¡bese ya tus plantas!\n¡bese ya tus manos!\n¡prosternado en tierra\nte tiendo los brazos,\ny aún más que mis frases\nte dice mi llanto!
+    </string>
+</resources>
