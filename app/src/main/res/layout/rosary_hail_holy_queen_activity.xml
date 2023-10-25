@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prayers.app.activity.rosary.RosaryHailHolyQueenActivity">
+
+    <TextView
+        android:id="@+id/txt_rosary_current_mystery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title_rosary_current_mystery"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/title_hail_holy_queen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/margin_30"
+        android:text="@string/title_hail_holy_queen"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_25" />
+
+    <ScrollView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_buttons"
+        android:layout_below="@+id/title_hail_holy_queen"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_40">
+
+            <ImageView
+                android:id="@+id/rosary_current_hail_holy_queen"
+                android:layout_width="@dimen/width_200"
+                android:layout_height="@dimen/height_200"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/margin_5"
+                app:srcCompat="@mipmap/rosary_empty" />
+
+            <TextView
+                android:id="@+id/txt_hail_holy_queen_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rosary_current_hail_holy_queen"
+                android:layout_alignParentStart="true"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/txt_hail_holy_queen_1"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/txt_hail_holy_queen_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_hail_holy_queen_1"
+                android:paddingTop="@dimen/margin_10"
+                android:text="@string/txt_hail_holy_queen_2"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:id="@+id/lbl_amen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_hail_holy_queen_2"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/margin_15"
+                android:text="@string/txt_amen"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_30" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/rosary_mysteries_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.2"
+        android:paddingTop="@dimen/margin_50"
+        app:srcCompat="@mipmap/lights_wrath_2_vert" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="@dimen/width_close_40"
+        android:layout_height="@dimen/height_close_40"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding"
+        android:text="@string/txt_close"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/close_text_size_20" />
+
+    <LinearLayout
+        android:id="@+id/nav_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/txt_prev"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/txt_next"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

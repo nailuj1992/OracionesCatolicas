@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SpecialPrayersActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SimplePrayersActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- START SIMPLE PRAYERS -->
+        <activity
+            android:name=".simple.SimpleOurFatherActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simple.SimpleHailMaryActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simple.SimpleGloryBeActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simple.SimpleHailHolyQueenActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simple.SimpleStMichaelActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".simple.SimpleMagnificatActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- END SIMPLE PRAYERS -->
+
+        <!-- START ROSARY PRAYERS -->
+        <activity
+            android:name=".rosary.RosaryHomeActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryMysteriesActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryBeginActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryApostlesCreedActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryCurrentMysteryActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryOurFatherActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryHailMaryActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryGloryBeActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryFatimaActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryHailHolyQueenActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".rosary.RosaryEndActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- END ROSARY PRAYERS -->
+
+        <!-- START NINTH PRAYERS -->
+        <activity
+            android:name=".ninth.NinthHomeActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthBeginActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthInitialPrayerActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthGloryBeActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthConsiderationActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthParagraphActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthVirginMaryPrayerActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthHailMaryActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthSaintJosephPrayerActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthOurFatherActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthJoysActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthChildJesusPrayerActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ninth.NinthEndActivity"
+            android:configChanges="screenSize|locale|orientation|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- END NINTH PRAYERS -->
+    </application>
+
+</manifest>

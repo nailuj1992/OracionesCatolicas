@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prayers.app.activity.SimplePrayersActivity">
+
+    <TextView
+        android:id="@+id/title_simple_prayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/margin_top"
+        android:text="@string/title_simple_prayers"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_25" />
+
+    <ScrollView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_prev"
+        android:layout_below="@+id/title_simple_prayers"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_left"
+            android:layout_marginEnd="@dimen/margin_right"
+            android:paddingTop="@dimen/margin_250"
+            android:paddingBottom="@dimen/margin_60">
+
+            <Button
+                android:id="@+id/btn_our_father"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="start|top"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/title_our_father"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_hail_mary"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|top"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/title_hail_mary"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+
+            <View
+                android:id="@+id/space_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_80"
+                android:layout_below="@+id/btn_our_father" />
+
+            <Button
+                android:id="@+id/btn_glory_be"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space_1"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="start|center_vertical"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/title_glory_be"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_hail_holy_queen"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space_1"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/title_hail_holy_queen"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+
+            <View
+                android:id="@+id/space_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_80"
+                android:layout_below="@+id/btn_glory_be" />
+
+            <Button
+                android:id="@+id/btn_st_michael"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space_2"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="start|bottom"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/title_st_michael_short"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+
+            <Button
+                android:id="@+id/btn_magnificat"
+                android:layout_width="@dimen/width_150"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space_2"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|bottom"
+                android:background="@drawable/round"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/title_magnificat"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/simple_prayers_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.4"
+        android:paddingTop="@dimen/margin_50"
+        app:srcCompat="@mipmap/tuure_vert" />
+
+    <Button
+        android:id="@+id/btn_prev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding"
+        android:text="@string/txt_prev"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/text_size_12" />
+</RelativeLayout>
