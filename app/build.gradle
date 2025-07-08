@@ -9,12 +9,12 @@ android {
             keyPassword '-----'
         }
     }
-    compileSdkVersion 34
+    compileSdkVersion 35
     defaultConfig {
         applicationId "com.prayers.app"
         minSdkVersion 29
-        targetSdkVersion 34
-        versionCode 13
+        targetSdkVersion 35
+        versionCode 14
         versionName "2.1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
