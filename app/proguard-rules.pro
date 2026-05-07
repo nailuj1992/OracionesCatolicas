@@ -16,10 +16,57 @@
 #   public *;
 #}
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Preserve line numbers for crash reports
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# ===== App model classes (used by Gson via reflection) =====
+-keep class com.prayers.app.model.** { *; }
+-keepclassmembers class com.prayers.app.model.** { *; }
+-keep enum com.prayers.app.enums.** { *; }
+
+# ===== Retrofit =====
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature, Exceptions, *Annotation*, InnerClasses, Deprecated, EnclosingMethod
+-keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations, AnnotationDefault
+
+-keepclasseswithmembers class * {
+    @retrofit2.http.* <methods>;
+}
+-keep,allowobfuscation,allowshrinking interface retrofit2.Call
+-keep,allowobfuscation,allowshrinking class retrofit2.Response
+
+# Keep generic signatures of Call, Response (for Retrofit reflection)
+-keep,allowobfuscation,allowshrinking class kotlin.coroutines.Continuation
+
+# ===== OkHttp =====
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
+
+# ===== Gson =====
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn sun.misc.**
+-keep class com.google.gson.** { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class * extends com.google.gson.TypeAdapter
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+-keepclassmembers,allowobfuscation class * {
+  @com.google.gson.annotations.SerializedName <fields>;
+}
+
+# ===== Picasso =====
+-dontwarn com.squareup.picasso.**
+-keep class com.squareup.picasso.** { *; }
+
+# ===== AndroidX / Material =====
+-dontwarn com.google.android.material.**
+-keep class com.google.android.material.** { *; }
+-dontwarn androidx.**
+-keep class androidx.** { *; }
