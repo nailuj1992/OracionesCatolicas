@@ -1,11 +1,15 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <!-- Base application theme — uses MaterialComponents Bridge so existing AppCompat code keeps working. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textViewStyle">@style/AppTextView</item>
+        <!-- Don't override buttonStyle globally: it would force white text on AlertDialog Yes/No buttons,
+             which sit on a white surface. Layouts that want the filled prayer button apply
+             style="@style/PrayerButton" explicitly. -->
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +20,68 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Default TextView: comfortable line spacing & on-surface color. -->
+    <style name="AppTextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <!-- Headline / screen title -->
+    <style name="ScreenTitle">
+        <item name="android:textSize">@dimen/text_size_screen_title</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <!-- Body text used in prayer screens -->
+    <style name="BodyText">
+        <item name="android:textSize">@dimen/text_size_body</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style>
+
+    <!-- Card titles & subtitles -->
+    <style name="CardTitle">
+        <item name="android:textSize">@dimen/text_size_card_title</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="CardSubtitle">
+        <item name="android:textSize">@dimen/text_size_card_subtitle</item>
+        <item name="android:textColor">@color/colorOnSurfaceMuted</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
+    </style>
+
+    <!-- Primary prayer button (filled) -->
+    <style name="PrayerButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/round</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+        <item name="android:minHeight">@dimen/button_min_height</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+        <item name="android:paddingRight">@dimen/button_padding</item>
+        <item name="android:paddingTop">@dimen/margin_5</item>
+        <item name="android:paddingBottom">@dimen/margin_5</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- Lighter button (e.g. settings shortcut) -->
+    <style name="PrayerButton.Light">
+        <item name="android:background">@drawable/light</item>
+    </style>
+
+    <!-- Close (X) icon button at top-right -->
+    <style name="CloseButton" parent="PrayerButton">
+        <item name="android:textSize">@dimen/close_text_size_20</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
 
 </resources>

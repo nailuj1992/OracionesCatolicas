@@ -44,7 +44,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/view_paragraphs"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/margin_10"
             android:paddingBottom="@dimen/margin_25"

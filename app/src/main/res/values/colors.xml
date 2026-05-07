@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Brand palette -->
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorBackground">#E9EBFF</color>
-    <color name="colorText">#FFF</color>
+    <color name="colorPrimaryDark">#2C3D8E</color>
+    <color name="colorPrimaryLight">#7986CB</color>
+    <color name="colorAccent">#D4A85A</color>
+    <color name="colorAccentDark">#B68A3D</color>
+
+    <!-- Surfaces -->
+    <color name="colorBackground">#ECEEF7</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorSurfaceDim">#F4F6FB</color>
+    <color name="colorDivider">#D7DAE6</color>
+
+    <!-- Text -->
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorOnSurface">#1E2138</color>
+    <color name="colorOnSurfaceMuted">#5F6280</color>
+
+    <!-- Button states -->
+    <color name="colorButtonPrimary">#3F51B5</color>
+    <color name="colorButtonPrimaryPressed">#2C3D8E</color>
+    <color name="colorButtonSecondary">#7986CB</color>
+    <color name="colorButtonSecondaryPressed">#5C6BC0</color>
+
+    <!-- Ripple -->
+    <color name="colorRipple">#33FFFFFF</color>
 </resources>

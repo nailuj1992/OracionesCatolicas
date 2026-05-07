@@ -6,6 +6,11 @@
     <string name="title_special_prayers">Oraciones Especiales</string>
     <string name="title_simple_prayers">Oraciones Sencillas</string>
 
+    <string name="txt_card_special_prayers">Santo Rosario y Novena de Aguinaldos</string>
+    <string name="txt_card_simple_prayers">Padre Nuestro, Ave María, Gloria y más</string>
+    <string name="txt_card_rosary">Reza el Rosario por Misterios</string>
+    <string name="txt_card_ninth">Nueve días de oración en Adviento</string>
+
     <string name="title_settings_short">Config</string>
     <string name="title_settings">Configuración</string>
 

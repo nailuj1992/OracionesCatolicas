@@ -1,6 +1,6 @@
 package com.prayers.app.activity;
 
-import android.widget.Button;
+import android.view.View;
 
 import com.prayers.app.fragment.CloseDialogFragment;
 import com.prayers.app.utils.FieldsUtils;
@@ -10,9 +10,9 @@ public abstract class AbstractClosableActivity extends AbstractActivity {
 
     protected static final String TAG_PRAYERS = "PrayersApp";
 
-    private Button btnHome;
-    private Button btnPrev;
-    private Button btnNext;
+    private View btnHome;
+    private View btnPrev;
+    private View btnNext;
 
     /**
      * Subclass-specific view binding. Called after btn_home / btn_prev /
@@ -22,20 +22,20 @@ public abstract class AbstractClosableActivity extends AbstractActivity {
 
     @Override
     public final void prepareActivity() {
-        btnHome = (Button) findViewById(R.id.btn_home);
+        btnHome = findViewById(R.id.btn_home);
         if (btnHome != null) {
             btnHome.setOnClickListener(v -> gotoHome());
         }
 
-        btnPrev = (Button) findViewById(R.id.btn_prev);
+        btnPrev = findViewById(R.id.btn_prev);
         if (btnPrev != null) {
             btnPrev.setOnClickListener(v -> backAction());
         }
 
-        btnNext = (Button) findViewById(R.id.btn_next);
-        if (btnNext == null) btnNext = (Button) findViewById(R.id.btn_begin);
-        if (btnNext == null) btnNext = (Button) findViewById(R.id.btn_end);
-        if (btnNext == null) btnNext = (Button) findViewById(R.id.btn_pray);
+        btnNext = findViewById(R.id.btn_next);
+        if (btnNext == null) btnNext = findViewById(R.id.btn_begin);
+        if (btnNext == null) btnNext = findViewById(R.id.btn_end);
+        if (btnNext == null) btnNext = findViewById(R.id.btn_pray);
         if (btnNext != null) {
             btnNext.setOnClickListener(v -> nextAction());
         }

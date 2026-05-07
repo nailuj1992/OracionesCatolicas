@@ -1,9 +1,12 @@
 package com.prayers.app.ui.adapter;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,18 +30,31 @@ public class NinthJoysAdapter extends RecyclerView.Adapter<ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         context = viewGroup.getContext();
-        View view = LayoutInflater.from(context).inflate(R.layout.paragraph_row, viewGroup, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.joy_row, viewGroup, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         String text = joy.getLines()[i];
-        viewHolder.getTextView().setText(text);
+        TextView textView = viewHolder.getTextView();
+        textView.setText(text);
 
-        if (activity.getString(R.string.txt_ninth_joy_answer).equalsIgnoreCase(text)) {
-            viewHolder.getTextView().setTextColor(activity.getColor(R.color.colorPrimary));
+        boolean isAnswer = activity.getString(R.string.txt_ninth_joy_answer).equalsIgnoreCase(text);
+        View card = viewHolder.itemView.findViewById(R.id.card_view);
+        FrameLayout.LayoutParams cardParams = (FrameLayout.LayoutParams) card.getLayoutParams();
+        if (isAnswer) {
+            textView.setTextColor(activity.getColor(R.color.colorPrimary));
+            textView.setGravity(Gravity.END);
+            textView.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_END);
+            cardParams.gravity = Gravity.END;
+        } else {
+            textView.setTextColor(activity.getColor(R.color.colorOnSurface));
+            textView.setGravity(Gravity.START);
+            textView.setTextAlignment(View.TEXT_ALIGNMENT_VIEW_START);
+            cardParams.gravity = Gravity.START;
         }
+        card.setLayoutParams(cardParams);
     }
 
     @Override

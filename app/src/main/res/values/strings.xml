@@ -6,6 +6,11 @@
     <string name="title_special_prayers">Special Prayers</string>
     <string name="title_simple_prayers">Simple Prayers</string>
 
+    <string name="txt_card_special_prayers">Holy Rosary &amp; Christmas Novena</string>
+    <string name="txt_card_simple_prayers">Our Father, Hail Mary, Glory Be and more</string>
+    <string name="txt_card_rosary">Pray the Rosary by Mystery</string>
+    <string name="txt_card_ninth">Nine days of Advent prayer</string>
+
     <string name="title_settings_short">Prefs</string>
     <string name="title_settings">Settings</string>
 

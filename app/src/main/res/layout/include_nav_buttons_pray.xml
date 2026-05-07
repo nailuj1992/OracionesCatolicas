@@ -5,41 +5,33 @@
     android:layout_height="wrap_content"
     android:layout_alignParentStart="true"
     android:layout_alignParentBottom="true"
-    android:orientation="horizontal">
+    android:layout_marginStart="@dimen/margin_15"
+    android:layout_marginEnd="@dimen/margin_15"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:orientation="horizontal"
+    android:weightSum="2">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <Button
+        android:id="@+id/btn_prev"
+        style="@style/PrayerButton.Light"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_5"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:drawablePadding="@dimen/margin_5"
+        android:gravity="center"
+        android:text="@string/txt_prev" />
 
-        <Button
-            android:id="@+id/btn_prev"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round"
-            android:paddingLeft="@dimen/button_padding"
-            android:paddingRight="@dimen/button_padding"
-            android:text="@string/txt_prev"
-            android:textColor="@color/colorText"
-            android:textSize="@dimen/text_size_12" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <Button
+        android:id="@+id/btn_pray"
+        style="@style/PrayerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_5"
         android:layout_weight="1"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btn_pray"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/round"
-            android:paddingLeft="@dimen/button_padding"
-            android:paddingRight="@dimen/button_padding"
-            android:text="@string/txt_pray"
-            android:textColor="@color/colorText"
-            android:textSize="@dimen/text_size_12" />
-    </LinearLayout>
+        android:drawableEnd="@drawable/ic_arrow_forward"
+        android:drawablePadding="@dimen/margin_5"
+        android:gravity="center"
+        android:text="@string/txt_pray" />
 </LinearLayout>
