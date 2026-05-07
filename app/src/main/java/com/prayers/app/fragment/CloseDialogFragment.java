@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
 import com.prayers.app.activity.AbstractClosableActivity;
@@ -20,6 +21,7 @@ public class CloseDialogFragment extends DialogFragment {
         return frag;
     }
 
+    @NonNull
     @Override
     public final Dialog onCreateDialog(Bundle savedInstanceState) {
         String txtCloseDialog = getArguments().getString("txtCloseDialog");

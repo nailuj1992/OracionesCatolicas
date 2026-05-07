@@ -6,20 +6,24 @@
     <dimen name="nav_header_height">160dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding">10sp</dimen>
-    <dimen name="radius">4sp</dimen>
+    <dimen name="radius">10dp</dimen>
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
 
-    <dimen name="margin_start">15sp</dimen>
-    <dimen name="margin_left">5sp</dimen>
-    <dimen name="margin_top">20sp</dimen>
-    <dimen name="margin_end">15sp</dimen>
-    <dimen name="margin_right">5sp</dimen>
-    <dimen name="margin_bottom">20sp</dimen>
+    <dimen name="margin_start">16dp</dimen>
+    <dimen name="margin_left">8dp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_end">16dp</dimen>
+    <dimen name="margin_right">8dp</dimen>
+    <dimen name="margin_bottom">20dp</dimen>
     <dimen name="margin_bottom_horiz">60sp</dimen>
 
-    <dimen name="button_padding">10sp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="button_min_height">48dp</dimen>
+    <dimen name="button_corner_radius">12dp</dimen>
 
-    <dimen name="width_close_40">40sp</dimen>
-    <dimen name="height_close_40">40sp</dimen>
+    <dimen name="width_close_40">44dp</dimen>
+    <dimen name="height_close_40">44dp</dimen>
     <dimen name="close_text_size_20">20sp</dimen>
 
     <dimen name="width_50">50sp</dimen>
@@ -36,36 +40,45 @@
     <dimen name="height_200">200sp</dimen>
     <dimen name="height_300">300sp</dimen>
 
-    <dimen name="text_size_8">8sp</dimen>
-    <dimen name="text_size_10">10sp</dimen>
-    <dimen name="text_size_12">12sp</dimen>
+    <!-- Typography scale -->
+    <dimen name="text_size_8">10sp</dimen>
+    <dimen name="text_size_10">12sp</dimen>
+    <dimen name="text_size_12">14sp</dimen>
     <dimen name="text_size_14">14sp</dimen>
-    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_15">16sp</dimen>
     <dimen name="text_size_16">16sp</dimen>
     <dimen name="text_size_18">18sp</dimen>
     <dimen name="text_size_20">20sp</dimen>
     <dimen name="text_size_22">22sp</dimen>
-    <dimen name="text_size_25">25sp</dimen>
+    <dimen name="text_size_25">26sp</dimen>
     <dimen name="text_size_30">30sp</dimen>
-    <dimen name="text_size_35">35sp</dimen>
+    <dimen name="text_size_35">34sp</dimen>
     <dimen name="text_size_40">40sp</dimen>
-    <dimen name="text_size_45">45sp</dimen>
+    <dimen name="text_size_45">44sp</dimen>
     <dimen name="text_size_50">50sp</dimen>
 
-    <dimen name="margin_2">2sp</dimen>
-    <dimen name="margin_5">5sp</dimen>
-    <dimen name="margin_10">10sp</dimen>
-    <dimen name="margin_15">15sp</dimen>
-    <dimen name="margin_20">20sp</dimen>
-    <dimen name="margin_25">25sp</dimen>
-    <dimen name="margin_30">30sp</dimen>
-    <dimen name="margin_35">35sp</dimen>
-    <dimen name="margin_40">40sp</dimen>
-    <dimen name="margin_45">45sp</dimen>
-    <dimen name="margin_50">50sp</dimen>
-    <dimen name="margin_60">60sp</dimen>
-    <dimen name="margin_70">70sp</dimen>
-    <dimen name="margin_80">80sp</dimen>
-    <dimen name="margin_100">100sp</dimen>
-    <dimen name="margin_250">250sp</dimen>
+    <!-- New semantic sizes -->
+    <dimen name="text_size_button">16sp</dimen>
+    <dimen name="text_size_button_large">17sp</dimen>
+    <dimen name="text_size_card_title">20sp</dimen>
+    <dimen name="text_size_card_subtitle">14sp</dimen>
+    <dimen name="text_size_screen_title">28sp</dimen>
+    <dimen name="text_size_body">18sp</dimen>
+
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_5">6dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">14dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_25">24dp</dimen>
+    <dimen name="margin_30">28dp</dimen>
+    <dimen name="margin_35">32dp</dimen>
+    <dimen name="margin_40">36dp</dimen>
+    <dimen name="margin_45">40dp</dimen>
+    <dimen name="margin_50">48dp</dimen>
+    <dimen name="margin_60">56dp</dimen>
+    <dimen name="margin_70">64dp</dimen>
+    <dimen name="margin_80">72dp</dimen>
+    <dimen name="margin_100">96dp</dimen>
+    <dimen name="margin_250">160dp</dimen>
 </resources>

@@ -1,29 +1,21 @@
 package com.prayers.app.activity.rosary;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.prayers.app.activity.AbstractClosableActivity;
 import com.prayers.app.activity.R;
 import com.prayers.app.constants.GeneralConstants;
 import com.prayers.app.constants.RedirectionConstants;
 import com.prayers.app.mapper.RosaryMapper;
-import com.prayers.app.model.rosary.Mysteries;
+import com.prayers.app.navigation.PrayerScreen;
 import com.prayers.app.utils.FieldsUtils;
-import com.prayers.app.utils.RedirectionUtils;
 
-public class RosaryEndActivity extends AbstractClosableActivity {
-
-    private Mysteries selectedMysteries;
+public class RosaryEndActivity extends AbstractRosaryActivity {
 
     private ImageView imgMysteriesBackground;
 
     private TextView txtSignCross;
-
-    private Button btnPrev;
-    private Button btnEnd;
 
     @Override
     public int getActivity() {
@@ -31,37 +23,23 @@ public class RosaryEndActivity extends AbstractClosableActivity {
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         imgMysteriesBackground = (ImageView) findViewById(R.id.rosary_mysteries_background);
 
         txtSignCross = (TextView) findViewById(R.id.txt_sign_cross);
         FieldsUtils.justifyText(txtSignCross);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnEnd = (Button) findViewById(R.id.btn_end);
-        btnEnd.setOnClickListener(v -> nextAction());
     }
 
     @Override
-    public void updateViewState() {
-        try {
-            selectedMysteries = (Mysteries) getIntent().getExtras().getSerializable(RedirectionConstants.SELECTED_MYSTERIES);
-
-            RosaryMapper.changeImageForRosary(this, selectedMysteries, imgMysteriesBackground);
-        } catch (Exception ex) {
-            // TODO Log exception
-        }
+    protected void updateRosaryView() {
+        RosaryMapper.changeImageForRosary(this, selectedMysteries, imgMysteriesBackground);
     }
 
     @Override
     public void backAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_MYSTERIES, selectedMysteries);
+        Bundle bundle = buildBaseBundle();
         bundle.putInt(RedirectionConstants.SELECTED_MYSTERY, GeneralConstants.MAX_MYSTERIES);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, RosaryHailHolyQueenActivity.class);
+        PrayerScreen.goPrev(this, bundle);
     }
 
     @Override

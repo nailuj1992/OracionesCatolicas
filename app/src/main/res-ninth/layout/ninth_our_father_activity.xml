@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prayers.app.activity.ninth.NinthOurFatherActivity">
+
+    <TextView
+        android:id="@+id/title_our_father"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_left"
+        android:layout_marginEnd="@dimen/margin_right"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/margin_30"
+        android:text="@string/title_our_father"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_25" />
+
+    <ScrollView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_buttons"
+        android:layout_below="@+id/title_our_father"
+        android:layout_alignParentStart="true">
+
+        <include layout="@layout/include_body_our_father" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ninth_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.2"
+        android:paddingTop="@dimen/margin_50"
+        app:srcCompat="@mipmap/lights_wrath_2_vert" />
+
+    <include layout="@layout/include_btn_home" />
+
+    <include layout="@layout/include_nav_buttons_next" />
+</RelativeLayout>

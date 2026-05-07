@@ -1,20 +1,15 @@
 package com.prayers.app.activity.simple;
 
-import android.widget.Button;
 import android.widget.TextView;
 
-import com.prayers.app.activity.AbstractClosableActivity;
 import com.prayers.app.activity.R;
-import com.prayers.app.activity.SimplePrayersActivity;
 import com.prayers.app.utils.FieldsUtils;
-import com.prayers.app.utils.RedirectionUtils;
 
-public class SimpleMagnificatActivity extends AbstractClosableActivity {
+public class SimpleMagnificatActivity extends AbstractSimplePrayerActivity {
 
     private TextView txtMagnificat1;
     private TextView txtMagnificat2;
     private TextView txtMagnificat3;
-    private Button btnPrev;
 
     @Override
     public int getActivity() {
@@ -22,7 +17,7 @@ public class SimpleMagnificatActivity extends AbstractClosableActivity {
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         txtMagnificat1 = (TextView) findViewById(R.id.txt_magnificat_1);
         FieldsUtils.justifyText(txtMagnificat1);
 
@@ -31,23 +26,6 @@ public class SimpleMagnificatActivity extends AbstractClosableActivity {
 
         txtMagnificat3 = (TextView) findViewById(R.id.txt_magnificat_3);
         FieldsUtils.justifyText(txtMagnificat3);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-    }
-
-    @Override
-    public void updateViewState() {
-    }
-
-    @Override
-    public void backAction() {
-        FieldsUtils.toastMakeTest(getApplicationContext(), getResources().getText(R.string.title_simple_prayers));
-        RedirectionUtils.redirectToAnotherActivity(this, SimplePrayersActivity.class);
-    }
-
-    @Override
-    public void nextAction() {
     }
 
 }

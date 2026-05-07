@@ -1,5 +1,6 @@
 package com.prayers.app.activity;
 
+import android.view.View;
 import android.widget.Button;
 
 import com.prayers.app.activity.ninth.NinthHomeActivity;
@@ -9,8 +10,8 @@ import com.prayers.app.utils.RedirectionUtils;
 
 public class SpecialPrayersActivity extends AbstractActivity {
 
-    private Button btnRosary;
-    private Button btnNinth;
+    private View btnRosary;
+    private View btnNinth;
     private Button btnPrev;
 
     @Override
@@ -20,10 +21,10 @@ public class SpecialPrayersActivity extends AbstractActivity {
 
     @Override
     public void prepareActivity() {
-        btnRosary = (Button) findViewById(R.id.btn_rosary);
+        btnRosary = findViewById(R.id.btn_rosary);
         btnRosary.setOnClickListener(v -> gotoRosary());
 
-        btnNinth = (Button) findViewById(R.id.btn_ninth);
+        btnNinth = findViewById(R.id.btn_ninth);
         btnNinth.setOnClickListener(v -> gotoNinth());
 
         btnPrev = (Button) findViewById(R.id.btn_prev);
