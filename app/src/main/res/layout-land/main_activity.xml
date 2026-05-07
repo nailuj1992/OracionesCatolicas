@@ -92,7 +92,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:contentDescription="@null"
-                            android:src="@drawable/ic_star" />
+                            android:src="@drawable/ic_cross" />
 
                         <TextView
                             style="@style/CardTitle"
@@ -130,7 +130,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:contentDescription="@null"
-                            android:src="@drawable/ic_simple_prayer" />
+                            android:src="@drawable/ic_book" />
 
                         <TextView
                             style="@style/CardTitle"
@@ -146,7 +146,7 @@
 
             <Button
                 android:id="@+id/btn_settings"
-                style="@style/PrayerButton.Light"
+                style="@style/PrayerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_15"

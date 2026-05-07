@@ -118,7 +118,7 @@
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:contentDescription="@null"
-                        android:src="@drawable/ic_star" />
+                        android:src="@drawable/ic_christmas_star" />
 
                     <TextView
                         style="@style/CardTitle"
@@ -135,7 +135,7 @@
 
     <Button
         android:id="@+id/btn_prev"
-        style="@style/PrayerButton.Light"
+        style="@style/PrayerButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_15"

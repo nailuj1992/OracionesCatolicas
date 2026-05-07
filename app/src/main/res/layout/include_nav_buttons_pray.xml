@@ -13,7 +13,7 @@
 
     <Button
         android:id="@+id/btn_prev"
-        style="@style/PrayerButton.Light"
+        style="@style/PrayerButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/margin_5"
