@@ -1,12 +1,11 @@
 package com.prayers.app.activity.rosary;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.prayers.app.activity.AbstractClosableActivity;
 import com.prayers.app.activity.R;
 import com.prayers.app.constants.GeneralConstants;
 import com.prayers.app.constants.RedirectionConstants;
@@ -14,15 +13,11 @@ import com.prayers.app.enums.ETypeHailMary;
 import com.prayers.app.exception.PrayersException;
 import com.prayers.app.mapper.RosaryMapper;
 import com.prayers.app.model.HailMary;
-import com.prayers.app.model.rosary.Mysteries;
-import com.prayers.app.model.rosary.Mystery;
+import com.prayers.app.navigation.PrayerScreen;
 import com.prayers.app.utils.RedirectionUtils;
 
-public class RosaryHailMaryActivity extends AbstractClosableActivity {
+public class RosaryHailMaryActivity extends AbstractRosaryActivity {
 
-    private Mysteries selectedMysteries;
-    private int selectedMystery;
-    private Mystery mystery;
     private HailMary hailMary;
 
     private TextView txtTextCurrentMystery;
@@ -31,56 +26,38 @@ public class RosaryHailMaryActivity extends AbstractClosableActivity {
     private TextView txtTextExtra;
     private ImageView imgCurrentHailMary;
 
-    private Button btnPrev;
-    private Button btnNext;
-
     @Override
     public int getActivity() {
         return R.layout.rosary_hail_mary_activity;
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         txtTextCurrentMystery = (TextView) findViewById(R.id.txt_rosary_current_mystery);
         txtTextExtra = (TextView) findViewById(R.id.txt_hail_mary_extra);
         imgCurrentHailMary = (ImageView) findViewById(R.id.rosary_current_hail_mary);
         imgMysteriesBackground = (ImageView) findViewById(R.id.rosary_mysteries_background);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnNext = (Button) findViewById(R.id.btn_next);
-        btnNext.setOnClickListener(v -> nextAction());
     }
 
     @Override
-    public void updateViewState() {
-        try {
-            selectedMysteries = (Mysteries) getIntent().getExtras().getSerializable(RedirectionConstants.SELECTED_MYSTERIES);
-            selectedMystery = (int) getIntent().getExtras().getInt(RedirectionConstants.SELECTED_MYSTERY);
-            if (selectedMystery < selectedMysteries.getMysteries().length && selectedMystery >= 0) {
-                mystery = selectedMysteries.getMysteries()[selectedMystery];
-            } else {
-                mystery = null;
-            }
+    protected void updateRosaryView() {
+        Bundle extras = getIntent().getExtras();
+        if (extras == null) return;
 
-            ETypeHailMary typeHailMary = (ETypeHailMary) getIntent().getExtras().getSerializable(RedirectionConstants.HAIL_MARY_TYPE);
-            boolean currentHailMary = (boolean) getIntent().getExtras().getBoolean(RedirectionConstants.HAIL_MARY_FROM_END);
-            if (hailMary == null) {
-                hailMary = new HailMary(currentHailMary, typeHailMary);
-            }
-
-            if (mystery != null) {
-                txtTextCurrentMystery.setText(RosaryMapper.getCurrentMysteryLocation(this, selectedMysteries.getValue(), mystery));
-            } else {
-                txtTextCurrentMystery.setText(getString(R.string.txt_rosary_last_part));
-            }
-
-            updateHailMaryState();
-            RosaryMapper.changeImageForRosary(this, selectedMysteries, imgMysteriesBackground);
-        } catch (Exception ex) {
-            // TODO Log exception
+        ETypeHailMary typeHailMary = (ETypeHailMary) extras.getSerializable(RedirectionConstants.HAIL_MARY_TYPE);
+        boolean currentHailMary = extras.getBoolean(RedirectionConstants.HAIL_MARY_FROM_END);
+        if (hailMary == null) {
+            hailMary = new HailMary(currentHailMary, typeHailMary);
         }
+
+        if (mystery != null) {
+            txtTextCurrentMystery.setText(RosaryMapper.getCurrentMysteryLocation(this, selectedMysteries.getValue(), mystery));
+        } else {
+            txtTextCurrentMystery.setText(getString(R.string.txt_rosary_last_part));
+        }
+
+        updateHailMaryState();
+        RosaryMapper.changeImageForRosary(this, selectedMysteries, imgMysteriesBackground);
     }
 
     private void updateHailMaryState() {
@@ -112,11 +89,7 @@ public class RosaryHailMaryActivity extends AbstractClosableActivity {
             hailMary.decreaseValue();
             updateHailMaryState();
         } catch (PrayersException e) {
-            Bundle bundle = new Bundle();
-            bundle.putSerializable(RedirectionConstants.SELECTED_MYSTERIES, selectedMysteries);
-            bundle.putInt(RedirectionConstants.SELECTED_MYSTERY, selectedMystery);
-
-            RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, RosaryOurFatherActivity.class);
+            PrayerScreen.goPrev(this, buildBaseBundle());
         }
     }
 
@@ -126,15 +99,10 @@ public class RosaryHailMaryActivity extends AbstractClosableActivity {
             hailMary.increaseValue();
             updateHailMaryState();
         } catch (PrayersException e) {
-            Bundle bundle = new Bundle();
-            bundle.putSerializable(RedirectionConstants.SELECTED_MYSTERIES, selectedMysteries);
-            bundle.putInt(RedirectionConstants.SELECTED_MYSTERY, selectedMystery);
-
-            if (hailMary.getType() == ETypeHailMary.ROSARY_SHORT) {
-                RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, RosaryHailHolyQueenActivity.class);
-            } else {
-                RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, RosaryGloryBeActivity.class);
-            }
+            Class<? extends Activity> target = hailMary.getType() == ETypeHailMary.ROSARY_SHORT
+                    ? RosaryHailHolyQueenActivity.class
+                    : RosaryGloryBeActivity.class;
+            RedirectionUtils.redirectToAnotherActivityWithExtras(this, buildBaseBundle(), target);
         }
     }
 

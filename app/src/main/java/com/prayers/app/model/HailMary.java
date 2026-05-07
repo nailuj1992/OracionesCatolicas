@@ -2,46 +2,32 @@ package com.prayers.app.model;
 
 import com.prayers.app.constants.GeneralConstants;
 import com.prayers.app.enums.ETypeHailMary;
-import com.prayers.app.exception.PrayersException;
 
-public class HailMary {
+public class HailMary extends Counter {
 
-    private int current;
-    private ETypeHailMary type;
+    private final ETypeHailMary type;
 
     public HailMary(boolean end, ETypeHailMary type) {
         this.type = type;
-        if (end) {
-            this.current = getTotal();
-        } else {
-            this.current = GeneralConstants.MIN_HAIL_MARY;
-        }
-    }
-
-    public int getCurrent() {
-        return current;
+        this.current = end ? getMaxValueInclusive() : getMinValue();
     }
 
     public ETypeHailMary getType() {
         return type;
     }
 
+    @Override
     public int getTotal() {
         return type.getValue();
     }
 
-    public void increaseValue() throws PrayersException {
-        if (current >= getTotal()) {
-            throw new PrayersException(String.format(GeneralConstants.COUNT_NOT_INCREASE_MORE, getTotal()));
-        }
-        current++;
+    @Override
+    protected int getMinValue() {
+        return GeneralConstants.MIN_HAIL_MARY;
     }
 
-    public void decreaseValue() throws PrayersException {
-        if (current <= GeneralConstants.MIN_HAIL_MARY) {
-            throw new PrayersException(String.format(GeneralConstants.COUNT_NOT_DECREASE_MORE, GeneralConstants.MIN_HAIL_MARY));
-        }
-        current--;
+    @Override
+    protected int getMaxValueInclusive() {
+        return getTotal();
     }
-
 }

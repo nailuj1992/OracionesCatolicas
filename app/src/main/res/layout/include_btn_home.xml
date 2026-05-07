@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_home"
+    android:layout_width="@dimen/width_close_40"
+    android:layout_height="@dimen/height_close_40"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:background="@drawable/round"
+    android:paddingLeft="@dimen/button_padding"
+    android:paddingRight="@dimen/button_padding"
+    android:text="@string/txt_close"
+    android:textColor="@color/colorText"
+    android:textSize="@dimen/close_text_size_20" />

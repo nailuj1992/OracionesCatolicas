@@ -2,7 +2,6 @@ package com.prayers.app.activity.ninth;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioGroup;
 
 import com.prayers.app.activity.AbstractClosableActivity;
@@ -24,23 +23,14 @@ public class NinthHomeActivity extends AbstractClosableActivity {
 
     private RadioGroup radioDays;
 
-    private Button btnPrev;
-    private Button btnBegin;
-
     @Override
     public int getActivity() {
         return R.layout.ninth_home_activity;
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         radioDays = (RadioGroup) findViewById(R.id.radio_days);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnBegin = (Button) findViewById(R.id.btn_begin);
-        btnBegin.setOnClickListener(v -> nextAction());
     }
 
     @Override
@@ -58,7 +48,7 @@ public class NinthHomeActivity extends AbstractClosableActivity {
             days[GeneralConstants.EIGHTH_DAY_NINTH] = NinthMapper.prepopulateEighthDay(this);
             days[GeneralConstants.NINTH_DAY_NINTH] = NinthMapper.prepopulateNinthDay(this);
         } catch (Exception ex) {
-            // TODO Log exception
+            android.util.Log.w(TAG_PRAYERS, getClass().getSimpleName() + ".updateViewState failed", ex);
         }
 
         selectedDay = null;

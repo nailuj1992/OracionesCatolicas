@@ -1,21 +1,14 @@
 package com.prayers.app.activity.rosary;
 
-import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.prayers.app.activity.AbstractClosableActivity;
 import com.prayers.app.activity.R;
-import com.prayers.app.constants.RedirectionConstants;
 import com.prayers.app.mapper.RosaryMapper;
-import com.prayers.app.model.rosary.Mysteries;
+import com.prayers.app.navigation.PrayerScreen;
 import com.prayers.app.utils.FieldsUtils;
-import com.prayers.app.utils.RedirectionUtils;
 
-public class RosaryBeginActivity extends AbstractClosableActivity {
-
-    private Mysteries selectedMysteries;
+public class RosaryBeginActivity extends AbstractRosaryActivity {
 
     private ImageView imgMysteriesBackground;
 
@@ -23,16 +16,13 @@ public class RosaryBeginActivity extends AbstractClosableActivity {
     private TextView txtSignCross2;
     private TextView txtRosaryOffering;
 
-    private Button btnPrev;
-    private Button btnNext;
-
     @Override
     public int getActivity() {
         return R.layout.rosary_begin_activity;
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         imgMysteriesBackground = (ImageView) findViewById(R.id.rosary_mysteries_background);
 
         txtSignCross1 = (TextView) findViewById(R.id.txt_sign_cross_1);
@@ -43,39 +33,21 @@ public class RosaryBeginActivity extends AbstractClosableActivity {
 
         txtRosaryOffering = (TextView) findViewById(R.id.txt_rosary_offering);
         FieldsUtils.justifyText(txtRosaryOffering);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnNext = (Button) findViewById(R.id.btn_next);
-        btnNext.setOnClickListener(v -> nextAction());
     }
 
     @Override
-    public void updateViewState() {
-        try {
-            selectedMysteries = (Mysteries) getIntent().getExtras().getSerializable(RedirectionConstants.SELECTED_MYSTERIES);
-
-            RosaryMapper.changeImageForRosary(this, selectedMysteries, imgMysteriesBackground);
-        } catch (Exception ex) {
-            // TODO Log exception
-        }
+    protected void updateRosaryView() {
+        RosaryMapper.changeImageForRosary(this, selectedMysteries, imgMysteriesBackground);
     }
 
     @Override
     public void backAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_MYSTERIES, selectedMysteries);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, RosaryMysteriesActivity.class);
+        PrayerScreen.goPrev(this, buildBaseBundle());
     }
 
     @Override
     public void nextAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_MYSTERIES, selectedMysteries);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, RosaryApostlesCreedActivity.class);
+        PrayerScreen.goNext(this, buildBaseBundle());
     }
 
 }

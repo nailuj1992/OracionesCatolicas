@@ -35,6 +35,16 @@ android {
         abortOnError false
         checkReleaseBuilds false
     }
+    sourceSets {
+        main {
+            res.srcDirs = [
+                'src/main/res',
+                'src/main/res-rosary',
+                'src/main/res-ninth',
+                'src/main/res-simple',
+            ]
+        }
+    }
 }
 
 dependencies {
