@@ -11,23 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="@dimen/margin_left"
-        android:layout_marginTop="@dimen/margin_left"
-        android:layout_marginEnd="@dimen/margin_right"
-        android:layout_marginBottom="@dimen/margin_right"
-        card_view:cardCornerRadius="@dimen/radius">
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_5"
+        card_view:cardBackgroundColor="@color/colorSurface"
+        card_view:cardCornerRadius="@dimen/card_radius"
+        card_view:cardElevation="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="@dimen/padding">
+            android:padding="@dimen/margin_15">
 
             <TextView
                 android:id="@+id/txt_paragraph"
-                android:layout_width="wrap_content"
+                style="@style/BodyText"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_14"
+                android:textSize="@dimen/text_size_16"
                 tools:text="Paragraph text info here" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

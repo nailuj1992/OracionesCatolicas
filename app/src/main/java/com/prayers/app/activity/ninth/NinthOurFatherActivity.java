@@ -1,20 +1,12 @@
 package com.prayers.app.activity.ninth;
 
 import android.os.Bundle;
-import android.widget.Button;
 
-import com.prayers.app.activity.AbstractClosableActivity;
 import com.prayers.app.activity.R;
 import com.prayers.app.constants.RedirectionConstants;
-import com.prayers.app.model.ninth.NinthDay;
-import com.prayers.app.utils.RedirectionUtils;
+import com.prayers.app.navigation.PrayerScreen;
 
-public class NinthOurFatherActivity extends AbstractClosableActivity {
-
-    private NinthDay selectedDay;
-
-    private Button btnPrev;
-    private Button btnNext;
+public class NinthOurFatherActivity extends AbstractNinthActivity {
 
     @Override
     public int getActivity() {
@@ -22,38 +14,23 @@ public class NinthOurFatherActivity extends AbstractClosableActivity {
     }
 
     @Override
-    public void prepareOthersActivity() {
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnNext = (Button) findViewById(R.id.btn_next);
-        btnNext.setOnClickListener(v -> nextAction());
+    public void prepareViewFields() {
     }
 
     @Override
-    public void updateViewState() {
-        try {
-            selectedDay = (NinthDay) getIntent().getExtras().getSerializable(RedirectionConstants.SELECTED_NINTH_DAY);
-        } catch (Exception ex) {
-            // TODO Log exception
-        }
+    protected void updateNinthView() {
     }
 
     @Override
     public void backAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_NINTH_DAY, selectedDay);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, NinthSaintJosephPrayerActivity.class);
+        PrayerScreen.goPrev(this, buildBaseBundle());
     }
 
     @Override
     public void nextAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_NINTH_DAY, selectedDay);
+        Bundle bundle = buildBaseBundle();
         bundle.putSerializable(RedirectionConstants.JOYS_FROM_END, Boolean.FALSE);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, NinthJoysActivity.class);
+        PrayerScreen.goNext(this, bundle);
     }
 
 }

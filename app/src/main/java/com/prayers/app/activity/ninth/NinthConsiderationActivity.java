@@ -1,28 +1,20 @@
 package com.prayers.app.activity.ninth;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.prayers.app.activity.AbstractClosableActivity;
 import com.prayers.app.activity.R;
 import com.prayers.app.constants.RedirectionConstants;
-import com.prayers.app.model.ninth.NinthDay;
+import com.prayers.app.navigation.PrayerScreen;
 import com.prayers.app.ui.adapter.NinthConsiderationAdapter;
 import com.prayers.app.utils.FieldsUtils;
-import com.prayers.app.utils.RedirectionUtils;
 
-public class NinthConsiderationActivity extends AbstractClosableActivity {
-
-    private NinthDay selectedDay;
+public class NinthConsiderationActivity extends AbstractNinthActivity {
 
     private TextView txtTitleConsideration;
     private RecyclerView viewParagraphs;
-
-    private Button btnPrev;
-    private Button btnNext;
 
     @Override
     public int getActivity() {
@@ -30,44 +22,28 @@ public class NinthConsiderationActivity extends AbstractClosableActivity {
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         txtTitleConsideration = (TextView) findViewById(R.id.title_ninth_consideration);
         viewParagraphs = FieldsUtils.configureRecyclerView(this, R.id.view_paragraphs);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnNext = (Button) findViewById(R.id.btn_next);
-        btnNext.setOnClickListener(v -> nextAction());
     }
 
     @Override
-    public void updateViewState() {
-        try {
-            selectedDay = (NinthDay) getIntent().getExtras().getSerializable(RedirectionConstants.SELECTED_NINTH_DAY);
-
-            txtTitleConsideration.setText(String.format(getString(R.string.title_consideration), selectedDay.getName()));
-            viewParagraphs.setAdapter(new NinthConsiderationAdapter(this, selectedDay));
-        } catch (Exception ex) {
-            // TODO Log exception
-        }
+    protected void updateNinthView() {
+        if (selectedDay == null) return;
+        txtTitleConsideration.setText(String.format(getString(R.string.title_consideration), selectedDay.getName()));
+        viewParagraphs.setAdapter(new NinthConsiderationAdapter(this, selectedDay));
     }
 
     @Override
     public void backAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_NINTH_DAY, selectedDay);
+        Bundle bundle = buildBaseBundle();
         bundle.putSerializable(RedirectionConstants.GLORY_BE_FROM_END, Boolean.TRUE);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, NinthGloryBeActivity.class);
+        PrayerScreen.goPrev(this, bundle);
     }
 
     @Override
     public void nextAction() {
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(RedirectionConstants.SELECTED_NINTH_DAY, selectedDay);
-
-        RedirectionUtils.redirectToAnotherActivityWithExtras(this, bundle, NinthParagraphActivity.class);
+        PrayerScreen.goNext(this, buildBaseBundle());
     }
 
 }

@@ -1,7 +1,26 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="10sp" />
-    <stroke
-        android:width="1sp"
-        android:color="#2579FA" />
-    <solid android:color="#2579FA" />
-</shape>
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorRipple">
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/button_corner_radius" />
+                    <solid android:color="@color/colorButtonPrimaryPressed" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/button_corner_radius" />
+                    <solid android:color="@color/colorDivider" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/button_corner_radius" />
+                    <solid android:color="@color/colorButtonPrimary" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

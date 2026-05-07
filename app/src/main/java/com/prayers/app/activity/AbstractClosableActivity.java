@@ -1,6 +1,6 @@
 package com.prayers.app.activity;
 
-import android.widget.Button;
+import android.view.View;
 
 import com.prayers.app.fragment.CloseDialogFragment;
 import com.prayers.app.utils.FieldsUtils;
@@ -8,25 +8,42 @@ import com.prayers.app.utils.RedirectionUtils;
 
 public abstract class AbstractClosableActivity extends AbstractActivity {
 
-    private Button btnHome;
+    protected static final String TAG_PRAYERS = "PrayersApp";
+
+    private View btnHome;
+    private View btnPrev;
+    private View btnNext;
 
     /**
-     * Prepare all view fields.
+     * Subclass-specific view binding. Called after btn_home / btn_prev /
+     * btn_next (or its layout-specific variant) have already been wired.
      */
-    public abstract void prepareOthersActivity();
+    public abstract void prepareViewFields();
 
     @Override
     public final void prepareActivity() {
-        btnHome = (Button) findViewById(R.id.btn_home);
-        btnHome.setOnClickListener(v -> gotoHome());
+        btnHome = findViewById(R.id.btn_home);
+        if (btnHome != null) {
+            btnHome.setOnClickListener(v -> gotoHome());
+        }
 
-        prepareOthersActivity();
+        btnPrev = findViewById(R.id.btn_prev);
+        if (btnPrev != null) {
+            btnPrev.setOnClickListener(v -> backAction());
+        }
+
+        btnNext = findViewById(R.id.btn_next);
+        if (btnNext == null) btnNext = findViewById(R.id.btn_begin);
+        if (btnNext == null) btnNext = findViewById(R.id.btn_end);
+        if (btnNext == null) btnNext = findViewById(R.id.btn_pray);
+        if (btnNext != null) {
+            btnNext.setOnClickListener(v -> nextAction());
+        }
+
+        prepareViewFields();
     }
 
-    /**
-     * Goes to main activity.
-     */
-    private final void gotoHome() {
+    private void gotoHome() {
         String txtCloseDialog = getString(R.string.txt_close_dialog);
         String txtYesChoice = getString(R.string.txt_yes_choice);
         String txtNoChoice = getString(R.string.txt_no_choice);

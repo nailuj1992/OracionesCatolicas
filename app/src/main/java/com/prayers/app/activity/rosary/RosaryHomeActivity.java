@@ -2,7 +2,6 @@ package com.prayers.app.activity.rosary;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioGroup;
 
 import com.prayers.app.activity.AbstractClosableActivity;
@@ -25,23 +24,14 @@ public class RosaryHomeActivity extends AbstractClosableActivity {
 
     private RadioGroup radioMysteries;
 
-    private Button btnPrev;
-    private Button btnBegin;
-
     @Override
     public int getActivity() {
         return R.layout.rosary_home_activity;
     }
 
     @Override
-    public void prepareOthersActivity() {
+    public void prepareViewFields() {
         radioMysteries = (RadioGroup) findViewById(R.id.radio_mysteries);
-
-        btnPrev = (Button) findViewById(R.id.btn_prev);
-        btnPrev.setOnClickListener(v -> backAction());
-
-        btnBegin = (Button) findViewById(R.id.btn_begin);
-        btnBegin.setOnClickListener(v -> nextAction());
     }
 
     @Override
@@ -57,7 +47,7 @@ public class RosaryHomeActivity extends AbstractClosableActivity {
             mysteries[GeneralConstants.GLORIOUS_MYSTERIES] = RosaryMapper.prepopulateGloriousMysteries(this, reflection, pause);
             mysteries[GeneralConstants.LUMINOUS_MYSTERIES] = RosaryMapper.prepopulateLuminousMysteries(this, reflection, pause);
         } catch (Exception ex) {
-            // TODO Log exception
+            android.util.Log.w(TAG_PRAYERS, getClass().getSimpleName() + ".updateViewState failed", ex);
         }
 
         selectedMysteries = null;

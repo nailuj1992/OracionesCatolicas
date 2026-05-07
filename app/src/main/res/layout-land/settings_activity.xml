@@ -5,51 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.prayers.app.activity.SettingsActivity">
+
+    <ImageView
+        android:id="@+id/simple_prayers_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:alpha="0.18"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/tuure_horiz" />
 
     <TextView
         android:id="@+id/title_settings"
+        style="@style/ScreenTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="@dimen/margin_left"
-        android:layout_marginEnd="@dimen/margin_right"
-        android:gravity="center_horizontal"
-        android:paddingTop="@dimen/margin_top"
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:gravity="center"
+        android:paddingTop="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_10"
         android:text="@string/title_settings"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/text_size_25" />
+        android:textAlignment="center" />
 
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/btn_prev"
-        android:layout_below="@+id/title_settings" />
-
-    <ImageView
-        android:id="@+id/simple_prayers_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:alpha="0.4"
-        android:paddingTop="@dimen/margin_50"
-        app:srcCompat="@mipmap/tuure_horiz" />
+        android:layout_below="@+id/title_settings"
+        android:layout_marginStart="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:divider="@color/colorDivider"
+        android:dividerHeight="1dp" />
 
     <Button
         android:id="@+id/btn_prev"
+        style="@style/PrayerButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/round"
-        android:paddingLeft="@dimen/button_padding"
-        android:paddingRight="@dimen/button_padding"
-        android:text="@string/txt_prev"
-        android:textColor="@color/colorText"
-        android:textSize="@dimen/text_size_12" />
-
+        android:layout_marginStart="@dimen/margin_15"
+        android:layout_marginEnd="@dimen/margin_15"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:drawablePadding="@dimen/margin_10"
+        android:gravity="center"
+        android:text="@string/txt_prev" />
 </RelativeLayout>
